@@ -1,0 +1,566 @@
+{
+ "version": 2,
+ "id": "cadcraft",
+ "name": "CADCraft (ArtCraft)",
+ "description": "CADCraft fokussieren oder starten, Zeichen- und Änderungsbefehle über die Befehlszeile (Alias plus Enter), Fang, Raster und Ortho auf den F-Tasten, Datei; Regler für den Verlauf.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "CADCraft",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Zeichnen",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "cadcraft"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "CADCraft",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "L\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Linie",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "PL\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Polylinie",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "C\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Ellipse.svg",
+        "text": "Kreis",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "A\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Bogen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "REC\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rechteck",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "H\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Schraffur",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "T\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Text",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "DLI\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Bemaßung",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "O\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Versatz",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "TR\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Stutzen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "EX\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Dehnen",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Ändern",
+     "buttons": [
+      {
+       "action": {
+        "type": "text",
+        "text": "M\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Schieben",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "CO\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Kopieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "RO\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Drehen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "SC\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Skalieren",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "MI\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Spiegeln",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "S\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Strecken",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "F\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Abrunden",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "X\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Zerlegen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "E\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Delete.svg",
+        "text": "Löschen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "AR\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Reihe",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "Z\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ZoomIn.svg",
+        "text": "Zoom",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "LA\n",
+        "mode": "type"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Layer",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "Fang & Datei",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Objektfang",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F7"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Raster",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F8"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Ortho",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F9"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Fangraster",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F10"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Polar",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F11"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Verfolgung",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F12"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Dyn. Eing.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Print.svg",
+        "text": "Plotten",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_ESC"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Close.svg",
+        "text": "Abbrechen",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Z"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Verlauf",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_Y"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_Z"
+    }
+   },
+   "led_color": "#ffffff"
+  }
+ ],
+ "home_workspace": "ws1"
+}

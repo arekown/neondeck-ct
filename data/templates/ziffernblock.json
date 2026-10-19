@@ -1,0 +1,399 @@
+{
+ "version": 2,
+ "id": "ziffernblock",
+ "name": "Ziffernblock (Rechnen, Zahlen)",
+ "description": "Ziffernblock auf den Touch-Feldern: 0–9, Rechenzeichen, Komma und Enter, dazu Rück, Entf, Tab und Esc; Regler und Rad für die Pfeiltasten.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Ziffernblock",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Ziffern",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP7"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "7",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP8"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "8",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP9"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "9",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPSLASH"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "÷",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "4",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP5"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "5",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP6"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "6",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPASTERISK"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "×",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "1",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP2"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "2",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "3",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPMINUS"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "−",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Ziffern 2",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP0"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "0",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPDOT"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": ",",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPPLUS"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "+",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPENTER"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Enter",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_BACKSPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowLeft.svg",
+        "text": "Rück",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_DELETE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Delete.svg",
+        "text": "Entf",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_TAB"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Tab",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_ESC"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Close.svg",
+        "text": "Esc",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_0"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "=",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_5"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "%",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_8"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "(",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_9"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": ")",
+        "layout": "text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Cursor ↔",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFT"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Cursor ↕",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_UP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_DOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Cursor",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_UP"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_DOWN"
+    }
+   },
+   "led_color": "#80ffd0"
+  }
+ ],
+ "home_workspace": "ws1"
+}

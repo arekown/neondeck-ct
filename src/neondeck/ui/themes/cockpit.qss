@@ -1,0 +1,329 @@
+/* Cyberpunk Cockpit – nach notes/cockpit/cockpit.css.
+   Platzhalter {schluessel} / {schluessel@prozent} setzt theme.py ein.
+   Cyan: Linien, Werte, Hinweise. Magenta: Auswahl, Fokus, Hauptknoepfe. */
+
+QMainWindow, QDialog {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 {bg2}, stop:1 {bg});
+}
+QWidget {
+    font-family: "{font_ui}";
+    font-size: {font_pt}pt;
+    color: {text};
+    selection-background-color: {accent2@55};
+    selection-color: {bright};
+}
+QLabel, QCheckBox, QRadioButton { background: transparent; }
+QLabel:disabled, QCheckBox:disabled, QRadioButton:disabled { color: {text_dim}; }
+QLabel#heading {
+    font-family: "{font_head}";
+    font-size: 13pt;
+    font-weight: bold;
+    color: {accent};
+}
+QLabel#hint { color: {text_dim}; }
+QLabel#error { color: {danger}; }
+
+/* --- Menues, Werkzeugleiste, Statuszeile ----------------------------------------- */
+QMenuBar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 {accent2@6}, stop:1 transparent);
+    border-bottom: 1px solid {line};
+    padding: 2px 6px;
+}
+QMenuBar::item { background: transparent; padding: 4px 12px; color: {text}; }
+QMenuBar::item:selected { background: {accent@12}; color: {accent}; }
+QMenuBar::item:pressed { background: {accent2@18}; color: {bright}; }
+
+QMenu {
+    background: {bg2};
+    border: 1px solid {accent_dim};
+    padding: 5px 0;
+}
+QMenu::item { background: transparent; padding: 5px 28px 5px 26px; color: {text}; }
+QMenu::item:selected {
+    background: {accent2@20};
+    color: {bright};
+    border-left: 2px solid {accent2};
+    padding-left: 24px;
+}
+QMenu::item:disabled { color: {text_dim}; }
+QMenu::separator { height: 1px; background: {line}; margin: 5px 10px; }
+QMenu::icon { padding-left: 6px; }
+QMenu::indicator { width: 10px; height: 10px; left: 8px; }
+QMenu::indicator:non-exclusive:unchecked,
+QMenu::indicator:exclusive:unchecked { border: 1px solid {accent_dim}; background: transparent; }
+QMenu::indicator:non-exclusive:checked,
+QMenu::indicator:exclusive:checked { border: 1px solid {accent2}; background: {accent2}; }
+QMenu::indicator:exclusive { border-radius: 5px; }
+
+QToolBar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 {accent2@6}, stop:1 transparent);
+    border: none;
+    border-bottom: 1px solid {line};
+    padding: 5px 10px;
+    spacing: 6px;
+}
+QToolBar::separator { width: 1px; background: {line}; margin: 4px 10px; }
+
+QStatusBar {
+    border-top: 1px solid {line};
+    color: {accent};
+    font-family: "{font_mono}";
+    font-size: 10.5pt;
+}
+QStatusBar::item { border: none; }
+
+QToolTip {
+    background: {bg2};
+    color: {text};
+    border: 1px solid {accent};
+    padding: 4px 7px;
+    font-family: "{font_mono}";
+    font-size: 10.5pt;
+}
+
+/* --- Knoepfe ----------------------------------------------------------------------- */
+QPushButton, QToolButton {
+    font-weight: 600;
+    color: {accent};
+    background: {accent@8};
+    border: 1px solid {accent_dim};
+    border-radius: 0px;
+    padding: 4px 12px;
+    min-height: 20px;
+}
+QToolButton { padding: 4px 8px; }
+QPushButton:hover, QToolButton:hover {
+    color: {bright};
+    background: {accent@22};
+    border-color: {accent};
+}
+QPushButton:pressed, QToolButton:pressed, QToolButton:checked {
+    color: {bg};
+    background: {accent};
+    border-color: {accent};
+}
+QPushButton:focus, QToolButton:focus { border-color: {accent2}; }
+QPushButton:default {
+    color: {accent2};
+    background: {accent2@12};
+    border-color: {accent2};
+}
+QPushButton:default:hover { color: {bg}; background: {accent2}; }
+QPushButton:checked { color: {bg}; background: {accent2}; border-color: {accent2}; }
+QPushButton:disabled, QToolButton:disabled {
+    color: {text_dim};
+    background: transparent;
+    border-color: {line};
+}
+QPushButton::menu-indicator { subcontrol-position: right center; right: 4px; }
+QPushButton[menu="true"] { padding-right: 20px; }
+QToolBar QToolButton { background: transparent; border-color: transparent; }
+QToolBar QToolButton:hover { background: {accent@15}; border-color: {accent_dim}; }
+
+/* --- Eingaben ------------------------------------------------------------------------ */
+QLineEdit, QSpinBox, QDoubleSpinBox, QPlainTextEdit, QTextEdit, QComboBox,
+QKeySequenceEdit {
+    font-family: "{font_mono}";
+    font-size: 10.5pt;
+    color: {text};
+    background: {accent@6};
+    border: 1px solid {accent_dim};
+    border-radius: 0px;
+    padding: 3px 6px;
+    min-height: 20px;
+}
+QComboBox { color: {accent}; padding-right: 22px; }
+QLineEdit:hover, QSpinBox:hover, QDoubleSpinBox:hover, QPlainTextEdit:hover,
+QTextEdit:hover, QComboBox:hover { border-color: {accent}; }
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QPlainTextEdit:focus,
+QTextEdit:focus, QComboBox:focus, QComboBox:on {
+    border-color: {accent2};
+    background: {accent2@7};
+}
+QLineEdit:disabled, QSpinBox:disabled, QComboBox:disabled, QPlainTextEdit:disabled {
+    color: {text_dim};
+    border-color: {line};
+    background: transparent;
+}
+QLineEdit[readOnly="true"] { background: transparent; border-style: dashed; }
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    width: 20px;
+    border: none;
+    border-left: 1px solid {line};
+}
+QComboBox::down-arrow { image: url("{icon:arrow_down:accent}"); width: 10px; height: 10px; }
+QComboBox::down-arrow:on { image: url("{icon:arrow_down:accent2}"); }
+QComboBox::down-arrow:disabled { image: url("{icon:arrow_down:text_dim}"); }
+QComboBox QAbstractItemView {
+    font-family: "{font_mono}";
+    font-size: 10.5pt;
+    background: {bg2};
+    color: {text};
+    border: 1px solid {accent_dim};
+    outline: 0;
+    selection-background-color: {accent2@30};
+    selection-color: {bright};
+}
+QSpinBox::up-button, QSpinBox::down-button,
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    width: 18px;
+    border: none;
+    border-left: 1px solid {line};
+    background: transparent;
+}
+QSpinBox::up-button, QDoubleSpinBox::up-button { subcontrol-position: top right; }
+QSpinBox::down-button, QDoubleSpinBox::down-button { subcontrol-position: bottom right; }
+QSpinBox::up-button:hover, QSpinBox::down-button:hover,
+QDoubleSpinBox::up-button:hover, QDoubleSpinBox::down-button:hover { background: {accent@20}; }
+QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
+    image: url("{icon:arrow_up:accent}"); width: 8px; height: 8px;
+}
+QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
+    image: url("{icon:arrow_down:accent}"); width: 8px; height: 8px;
+}
+QSpinBox::up-arrow:disabled, QDoubleSpinBox::up-arrow:disabled {
+    image: url("{icon:arrow_up:text_dim}");
+}
+QSpinBox::down-arrow:disabled, QDoubleSpinBox::down-arrow:disabled {
+    image: url("{icon:arrow_down:text_dim}");
+}
+
+QCheckBox, QRadioButton { spacing: 8px; }
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid {accent_dim};
+    background: {accent@6};
+}
+QRadioButton::indicator { border-radius: 8px; }
+QCheckBox::indicator:hover, QRadioButton::indicator:hover { border-color: {accent}; }
+QCheckBox::indicator:checked, QRadioButton::indicator:checked {
+    border-color: {accent2};
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+                                stop:0 {accent2}, stop:0.55 {accent2}, stop:0.7 {accent2@25},
+                                stop:1 {accent2@25});
+}
+QCheckBox::indicator:disabled, QRadioButton::indicator:disabled { border-color: {line}; }
+
+/* --- Gruppen, Listen, Baeume, Reiter ---------------------------------------------- */
+QGroupBox {
+    font-family: "{font_head}";
+    background: {panel};
+    border: 1px solid {line};
+    margin-top: 14px;
+    padding: 14px 8px 8px 8px;
+}
+QGroupBox QWidget { font-family: "{font_ui}"; }
+QGroupBox QLineEdit, QGroupBox QSpinBox, QGroupBox QDoubleSpinBox, QGroupBox QComboBox,
+QGroupBox QPlainTextEdit, QGroupBox QTextEdit, QGroupBox QKeySequenceEdit {
+    font-family: "{font_mono}";
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 10px;
+    padding: 0 6px;
+    color: {accent};
+    background: {bg};
+}
+
+QAbstractItemView {
+    background: {panel};
+    alternate-background-color: {accent@4};
+    border: 1px solid {line};
+    outline: 0;
+}
+QTreeView::item, QListView::item { padding: 3px 4px; border: none; }
+QTreeView::item:hover, QListView::item:hover { background: {accent@10}; }
+QTreeView::item:selected, QListView::item:selected {
+    background: {accent2@24};
+    color: {bright};
+}
+QTreeView::branch:selected { background: {accent2@24}; }
+QTreeView::item:disabled, QListView::item:disabled { color: {text_dim}; }
+QHeaderView::section {
+    font-family: "{font_mono}";
+    font-size: 10.5pt;
+    color: {accent_dim};
+    background: {bg2};
+    border: none;
+    border-bottom: 1px solid {line};
+    padding: 4px 6px;
+}
+
+QTabBar { qproperty-drawBase: 0; }
+QTabBar::tab {
+    font-family: "{font_mono}";
+    font-size: 10.5pt;
+    color: {text_dim};
+    background: transparent;
+    border: 1px solid {line};
+    padding: 4px 14px;
+    margin-right: 4px;
+    min-height: 18px;
+}
+QTabBar::tab:hover:!selected { color: {accent}; background: {accent@8}; border-color: {accent_dim}; }
+QTabBar::tab:selected {
+    color: {bright};
+    background: {accent2@18};
+    border-color: {accent2};
+}
+QTabWidget::pane { border: 1px solid {line}; background: {panel}; }
+
+/* --- Rollbalken, Teiler, Rahmen --------------------------------------------------- */
+QScrollArea { background: transparent; border: none; }
+QScrollArea > QWidget > QWidget { background: transparent; }
+QScrollBar:vertical { background: {bg}; width: 10px; margin: 0; border: none; }
+QScrollBar:horizontal { background: {bg}; height: 10px; margin: 0; border: none; }
+QScrollBar::handle:vertical { background: {accent_dim@55}; min-height: 28px; margin: 2px; }
+QScrollBar::handle:horizontal { background: {accent_dim@55}; min-width: 28px; margin: 2px; }
+QScrollBar::handle:hover { background: {accent}; }
+QScrollBar::add-line, QScrollBar::sub-line { width: 0; height: 0; border: none; }
+QScrollBar::add-page, QScrollBar::sub-page { background: transparent; }
+
+QSplitter::handle { background: transparent; }
+QSplitter::handle:horizontal { width: 6px; }
+QSplitter::handle:vertical { height: 6px; }
+QSplitter::handle:hover { background: {accent@25}; }
+
+QFrame[frameShape="4"], QFrame[frameShape="5"] { color: {line}; }   /* HLine, VLine */
+
+QProgressBar {
+    font-family: "{font_mono}";
+    font-size: 10.5pt;
+    border: 1px solid {accent_dim};
+    background: {accent@6};
+    text-align: center;
+}
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 {accent}, stop:1 {accent2});
+}
+QSlider::groove:horizontal {
+    height: 4px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 {accent}, stop:1 {accent2});
+}
+QSlider::handle:horizontal {
+    width: 14px;
+    margin: -6px 0;
+    border-radius: 7px;
+    background: {bright};
+}
+
+/* --- Diagnose, Simulieren (P13) ------------------------------------------------------ */
+QLabel#ok { color: {ok}; }
+QPlainTextEdit#fix { font-family: "{font_mono}"; font-size: 9.5pt; }
+QToolBar QToolButton#simulate:checked {
+    background: {accent2};
+    border-color: {accent2};
+    color: {bg};
+    font-weight: bold;
+}
+QLabel#simulate {
+    background: {accent2};
+    color: {bg};
+    font-weight: bold;
+    padding: 1px 10px;
+}

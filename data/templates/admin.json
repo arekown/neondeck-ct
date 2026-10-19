@@ -1,0 +1,257 @@
+{
+ "version": 2,
+ "id": "admin",
+ "name": "Konsole & Admin (Konsole, htop, dnf)",
+ "description": "Konsole fokussieren oder starten, htop, Systemprotokoll, Updates mit dnf und Flatpak, Plattenplatz, Speicher, Netz, fehlgeschlagene Dienste, Grafikkarte und eine SSH-Verbindung (Platzhalter nutzer@rechner anpassen).",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Konsole & Admin",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Admin",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.kde.konsole"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Keyboard.svg",
+        "text": "Konsole",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "htop",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/BarGraph.svg",
+        "text": "htop",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "journalctl -f",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Parchment.svg",
+        "text": "Journal",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "sudo dnf upgrade",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/CircleArrowDown.svg",
+        "text": "Update",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "flatpak update",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/CircleArrowDown.svg",
+        "text": "Flatpak",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "df -h",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Folder.svg",
+        "text": "Platten",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "free -h",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Graph.svg",
+        "text": "Speicher",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "ip a",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Devices.svg",
+        "text": "Netz",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "systemctl --failed",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/NoEntrySign.svg",
+        "text": "Dienste",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "nvidia-smi",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "GPU",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "ssh nutzer@rechner",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Devices.svg",
+        "text": "SSH",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "files"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFolder.svg",
+        "text": "Dateien",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Scrollen",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_PAGEUP"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_PAGEDOWN"
+    }
+   },
+   "led_color": "#39ff14"
+  }
+ ],
+ "home_workspace": "ws1"
+}

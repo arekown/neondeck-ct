@@ -1,0 +1,255 @@
+{
+ "version": 2,
+ "id": "pdfcraft",
+ "name": "PdfCraft (ArtCraft)",
+ "description": "PdfCraft fokussieren oder starten, Öffnen, Speichern, Drucken, Suchen, Befehlspalette, Seite und Vollbild; Regler für Verlauf, Ansicht zurück/vor und Tabs.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "PdfCraft",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "PDF",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "ai.storyteller.pdfcraft"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "PdfCraft",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_O"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFolder.svg",
+        "text": "Öffnen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speich. u.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Print.svg",
+        "text": "Drucken",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_F"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SearchComputer.svg",
+        "text": "Suchen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_F"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Erweitert",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_K"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Befehle",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_N"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Gehe Seite",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "Vollbild",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SmartZoom.svg",
+        "text": "Einpassen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Bookmark.svg",
+        "text": "Lesezeich.",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Ansicht",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_8"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_9"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Tab",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_TAB"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_TAB"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Ansicht",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_8"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_9"
+    }
+   },
+   "led_color": "#d4142a"
+  }
+ ],
+ "home_workspace": "ws1"
+}

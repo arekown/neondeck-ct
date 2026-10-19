@@ -1,0 +1,377 @@
+{
+ "version": 2,
+ "id": "fenster",
+ "name": "Fenster & Monitore (KDE Plasma)",
+ "description": "Fenster kacheln, maximieren, minimieren, Vollbild und schließen, auf den anderen Monitor oder die nächste Arbeitsfläche schieben, Übersicht und Arbeitsflächen; Regler für Arbeitsflächen, Lautstärke und Helligkeit.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Fenster & Monitore",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Fenster",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_LEFT"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowLeft.svg",
+        "text": "Links",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_RIGHT"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowRight.svg",
+        "text": "Rechts",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_UP"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowUp.svg",
+        "text": "Oben",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_DOWN"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowDown.svg",
+        "text": "Unten",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_PAGEUP"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/DoubleArrowsUp.svg",
+        "text": "Maximieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_PAGEDOWN"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/DoubleArrowsDown.svg",
+        "text": "Minimieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Fullscreen"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "Vollbild",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_F4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Close.svg",
+        "text": "Schließen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_LEFTSHIFT+KEY_LEFT"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/CircleArrowLeft.svg",
+        "text": "Monitor ←",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_LEFTSHIFT+KEY_RIGHT"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/CircleArrowRight.svg",
+        "text": "Monitor →",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Kacheln",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Above Other Windows"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "Vordergr.",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Arbeitsflächen",
+     "buttons": [
+      {
+       "action": {
+        "type": "kde",
+        "name": "overview"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SwitchPages.svg",
+        "text": "Übersicht",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "show_desktop"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/HideDesktop.svg",
+        "text": "Desktop",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "window_switcher"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Wechseln",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "dynamic_folder",
+        "kind": "windows"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Folder.svg",
+        "text": "Fenster",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "desktop_previous"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/PillArrowLeft.svg",
+        "text": "Fläche ←",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "desktop_next"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/PillArrowRight.svg",
+        "text": "Fläche →",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window One Desktop to the Left"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Fenst. ←",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window One Desktop to the Right"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Fenst. →",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "desktop_add"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "+ Fläche",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "desktop_remove"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "− Fläche",
+        "layout": "text"
+       }
+      },
+      null,
+      null
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Fläche",
+     "rotate": {
+      "type": "kde_adjust",
+      "left": "desktop_previous",
+      "right": "desktop_next"
+     },
+     "press": {
+      "type": "kde",
+      "name": "overview"
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "Helligkeit",
+     "rotate": {
+      "type": "brightness"
+     },
+     "press": {
+      "type": "brightness_reset"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Fläche",
+    "rotate": {
+     "type": "kde_adjust",
+     "left": "desktop_previous",
+     "right": "desktop_next"
+    }
+   },
+   "led_color": "#00bfff"
+  }
+ ],
+ "home_workspace": "ws1"
+}

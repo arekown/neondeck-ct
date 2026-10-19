@@ -1,0 +1,20 @@
+{
+  "backgroundColor": 4278190080,
+  "items": [
+    {
+      "$type": "Loupedeck.Service.ActionIconTextItem, LoupedeckShared",
+      "text": "Desk Control",
+      "textColor": 4294967295,
+      "fontSize": 4,
+      "fontName": "Sans",
+      "isVisible": false,
+      "itemType": "Text",
+      "area": {
+        "x": 0,
+        "y": 57,
+        "width": 100,
+        "height": 32
+      }
+    }
+  ]
+}

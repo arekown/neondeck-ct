@@ -1,0 +1,305 @@
+{
+ "version": 2,
+ "id": "streaming",
+ "name": "Streaming (OBS-Kürzel)",
+ "description": "Steuert OBS über Tastenkürzel: in OBS unter Einstellungen → Hotkeys die Kürzel Strg+Alt+F1 … F9 zuweisen (Aufnahme, Stream, Szenen 1–4, Pause, Replay, Studio-Modus).",
+ "app_ids": [
+  "com.obsproject.Studio"
+ ],
+ "dynamic": true,
+ "hold_profile": true,
+ "round": {
+  "7": {
+   "action": {
+    "type": "hotkey",
+    "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F1"
+   }
+  },
+  "8": {
+   "action": {
+    "type": "hotkey",
+    "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F2"
+   }
+  }
+ },
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "OBS",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Steuerung",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F1"
+       },
+       "image": {
+        "bg": "#5a0010",
+        "icon": "svg:icons/Ellipse.svg",
+        "text": "Aufnahme",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F2"
+       },
+       "image": {
+        "bg": "#5a0010",
+        "icon": "svg:icons/SendMessage.svg",
+        "text": "Stream",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F7"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Pause.svg",
+        "text": "Pause",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "com.obsproject.Studio"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "OBS",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Szene 1",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Szene 2",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F5"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Szene 3",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F6"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Szene 4",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "mic_mute"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaUnmuteMic.svg",
+        "text": "Mikrofon",
+        "layout": "icon_text"
+       },
+       "state_source": {
+        "type": "mic_mute"
+       },
+       "states": [
+        {
+         "image": {
+          "bg": "#000000",
+          "icon": "svg:icons/MediaUnmuteMic.svg",
+          "text": "Mikro an",
+          "layout": "icon_text"
+         }
+        },
+        {
+         "image": {
+          "bg": "#5a0010",
+          "icon": "svg:icons/MediaMuteMic.svg",
+          "text": "Mikro aus",
+          "layout": "icon_text"
+         }
+        }
+       ]
+      },
+      {
+       "action": {
+        "type": "mute_toggle"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVolume.svg",
+        "text": "Ton",
+        "layout": "icon_text"
+       },
+       "state_source": {
+        "type": "mute"
+       },
+       "states": [
+        {
+         "image": {
+          "bg": "#000000",
+          "icon": "svg:icons/MediaVolume.svg",
+          "text": "Ton an",
+          "layout": "icon_text"
+         }
+        },
+        {
+         "image": {
+          "bg": "#5a0010",
+          "icon": "svg:icons/MediaVolumeMute.svg",
+          "text": "Stumm",
+          "layout": "icon_text"
+         }
+        }
+       ]
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F8"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Refresh.svg",
+        "text": "Replay",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F9"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/View.svg",
+        "text": "Studio-Modus",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "App 1",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 0
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 0
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "App 2",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 1
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 1
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "App 3",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 2
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 2
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "rotate": {
+     "type": "volume"
+    },
+    "display": "arc",
+    "label": "Lautstärke"
+   },
+   "led_color": "#ff2a6d"
+  }
+ ],
+ "home_workspace": "ws1"
+}

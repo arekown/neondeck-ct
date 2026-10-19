@@ -1,0 +1,405 @@
+{
+ "version": 2,
+ "id": "gridcraft",
+ "name": "GridCraft (ArtCraft)",
+ "description": "GridCraft fokussieren oder starten, Zellformat, Summe, Ausfüllen, Filter und Blätter, Bearbeiten, Suchen und Drucken; Regler für Blattwechsel und Schriftgröße.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "GridCraft",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Tabelle",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "gridcraft"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "GridCraft",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Fett",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Kursiv",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_U"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Unterstr.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Formatier.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Summe",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F2"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Bearbeiten",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowDown.svg",
+        "text": "Ausf. ↓",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowRight.svg",
+        "text": "Ausf. →",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Filter",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F9"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Refresh.svg",
+        "text": "Berechnen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_F11"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Neu. Blatt",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Bearbeiten",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Kopieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_X"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Aussch.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Paste.svg",
+        "text": "Einfügen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_F"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SearchComputer.svg",
+        "text": "Suchen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_H"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Ersetzen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Gehe zu",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Print.svg",
+        "text": "Drucken",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Zeile",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Spalte",
+        "layout": "text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Blatt",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_PAGEUP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_PAGEDOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Schrift",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_102ND"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_102ND"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Z"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Blatt",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_PAGEUP"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_PAGEDOWN"
+    }
+   },
+   "led_color": "#22c55e"
+  }
+ ],
+ "home_workspace": "ws1"
+}

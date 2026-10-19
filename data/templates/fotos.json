@@ -1,0 +1,505 @@
+{
+ "version": 2,
+ "id": "fotos",
+ "name": "Fotos (darktable, digiKam)",
+ "description": "darktable und digiKam fokussieren oder starten, Bewertung 0–5, Ablehnen und Farbmarken, Bild vor/zurück, Verlauf kopieren und einfügen, Duplikat und Export; Regler für Bilder und Verlauf.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Fotos",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Bewerten",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.darktable.Darktable"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "darktable",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_0"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/StarOff.svg",
+        "text": "0 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "1 Stern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_2"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "2 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "3 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "4 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_5"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "5 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ThumbsDown.svg",
+        "text": "Ablehnen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rot",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F2"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Gelb",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Grün",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Blau",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Bearbeiten",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Library.svg",
+        "text": "Leuchtt.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Dunkelkam.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_BACKSPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowLeft.svg",
+        "text": "Bild zur.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowRight.svg",
+        "text": "Bild vor",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Verl. kop.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Paste.svg",
+        "text": "Verl. einf",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Duplikat",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_E"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SendMessage.svg",
+        "text": "Export",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F11"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "Vollbild",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_TAB"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Leisten",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "digiKam",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.kde.digikam"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "digiKam",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_0"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/StarOff.svg",
+        "text": "0 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "1 Stern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_2"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "2 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "3 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "4 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_5"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "5 Sterne",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Editor",
+        "layout": "text"
+       }
+      },
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Bild",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_BACKSPACE"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_SPACE"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Z"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Bild",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_BACKSPACE"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_SPACE"
+    }
+   },
+   "led_color": "#ffe4b5"
+  }
+ ],
+ "home_workspace": "ws1"
+}

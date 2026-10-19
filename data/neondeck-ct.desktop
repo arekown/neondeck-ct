@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Neondeck CT
+GenericName=Loupedeck CT
+Comment=Loupedeck CT unter Linux einrichten
+Exec=neondeck-ct
+Icon=input-keyboard
+Terminal=false
+Categories=Utility;Settings;
+Keywords=Loupedeck;CT;Controller;

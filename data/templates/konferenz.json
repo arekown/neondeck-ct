@@ -1,0 +1,593 @@
+{
+ "version": 2,
+ "id": "konferenz",
+ "name": "Videokonferenz (Zoom, Teams, Jitsi, Discord)",
+ "description": "Je Programm eine Seite: Mikrofon und Kamera, Hand heben, Bildschirm teilen, Auflegen und mehr (Zoom, Teams, Jitsi, Discord), dazu das Systemmikrofon stumm; Regler für Lautstärke und Anwendungen.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Videokonferenz",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Zoom",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "us.zoom.Zoom"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Zoom",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_A"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVideoOn.svg",
+        "text": "Kamera",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ScreenCapture.svg",
+        "text": "Teilen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/UserVoice.svg",
+        "text": "Hand",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_Q"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Close.svg",
+        "text": "Auflegen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "mic_mute"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro Sys.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_F1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/User.svg",
+        "text": "Sprecher",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_F2"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Galerie",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_H"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ChatMessage.svg",
+        "text": "Chat",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_U"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Teilnehmer",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_F"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "Vollbild",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Teams",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "com.github.IsmaelMartinez.teams_for_linux"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Teams",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_O"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVideoOn.svg",
+        "text": "Kamera",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_E"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ScreenCapture.svg",
+        "text": "Teilen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_K"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/UserVoice.svg",
+        "text": "Hand",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_H"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Close.svg",
+        "text": "Auflegen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "mic_mute"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro Sys.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ThumbsUp.svg",
+        "text": "Annehmen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ThumbsDown.svg",
+        "text": "Ablehnen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Weichzeic.",
+        "layout": "text"
+       }
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "Jitsi",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.jitsi.jitsi-meet"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Jitsi",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVideoOn.svg",
+        "text": "Kamera",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ScreenCapture.svg",
+        "text": "Teilen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/UserVoice.svg",
+        "text": "Hand",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hold_key",
+        "keys": "KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Dictation.svg",
+        "text": "Sprechen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "mic_mute"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro Sys.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_W"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Kacheln",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ChatMessage.svg",
+        "text": "Chat",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "Vollbild",
+        "layout": "icon_text"
+       }
+      },
+      null,
+      null
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "Discord",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "com.discordapp.Discord"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ChatMessage.svg",
+        "text": "Discord",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaHeadphonesOff.svg",
+        "text": "Taub",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_ENTER"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ThumbsUp.svg",
+        "text": "Annehmen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_ESC"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ThumbsDown.svg",
+        "text": "Ablehnen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "mic_mute"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro Sys.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "mute_toggle"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVolumeMute.svg",
+        "text": "Ton aus",
+        "layout": "icon_text"
+       }
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "App 1",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 0
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 0
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "App 2",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 1
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 1
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "arc",
+    "label": "Lautstärke",
+    "rotate": {
+     "type": "volume"
+    },
+    "tap": {
+     "type": "mute_toggle"
+    }
+   },
+   "led_color": "#8a2be2"
+  }
+ ],
+ "home_workspace": "ws1"
+}

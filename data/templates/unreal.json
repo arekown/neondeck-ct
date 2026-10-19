@@ -1,0 +1,393 @@
+{
+ "version": 2,
+ "id": "unreal",
+ "name": "Unreal Engine (Editor)",
+ "description": "Unreal Editor fokussieren oder starten, Play/Simulate/Stop, Speichern, Transformieren, Duplizieren, Live Coding, Ansichten und Ansichtsmodi; Regler für den Verlauf.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Unreal Engine",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Editor",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "unreal-editor"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cube.svg",
+        "text": "Unreal",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Play",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Simulate",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_ESC"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaStop.svg",
+        "text": "Stopp",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Alles sp.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_W"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Bewegen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_E"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Drehen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Skalieren",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Duplikat",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_END"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowDown.svg",
+        "text": "Auf Boden",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_F11"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Refresh.svg",
+        "text": "Live Code",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Ansicht",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SmartZoom.svg",
+        "text": "Fokus",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/View.svg",
+        "text": "Game-View",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Folder.svg",
+        "text": "Content",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cube.svg",
+        "text": "Perspekt.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_J"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Oben",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_H"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Vorne",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_K"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Seite",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Lit",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Unlit",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_2"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Drahtgit.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F11"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "Vollbild",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Z"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Verlauf",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_Y"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_Z"
+    }
+   },
+   "led_color": "#b0b0b0"
+  }
+ ],
+ "home_workspace": "ws1"
+}

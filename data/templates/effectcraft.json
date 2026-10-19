@@ -1,0 +1,570 @@
+{
+ "version": 2,
+ "id": "effectcraft",
+ "name": "EffectCraft (ArtCraft)",
+ "description": "EffectCraft fokussieren oder starten, Vorschau, Keyframes, Arbeitsbereich und Marker, Werkzeuge und Eigenschaften im After-Effects-Layout, Ebenen; Regler für Zeit- und Viewer-Zoom, Keyframes und Ebenen-Verschiebung.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "EffectCraft",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Zeit",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "ai.storyteller.effectcraft"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "EffectCrft",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Vorschau",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Ebene In",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_O"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Ebene Out",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_J"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowLeft.svg",
+        "text": "Keyfr. ←",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_K"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowRight.svg",
+        "text": "Keyfr. →",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Bereich A",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_N"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Bereich E",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPASTERISK"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Bookmark.svg",
+        "text": "Marker",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F9"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Easy Ease",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_F3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Graph.svg",
+        "text": "Graph",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Teilen",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Werkzeuge",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Auswahl",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_H"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Hand",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ZoomIn.svg",
+        "text": "Zoom",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Text",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Stift",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_Q"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Form",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_W"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Drehwerkz.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Pan hinten",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Position",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Skalierung",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rotation",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Deckkraft",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "Ebene",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_N"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Neue Komp.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Farbfläche",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Einst.-Eb.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Vorkomp.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Duplikat",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_A"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Anker",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_E"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Effekte",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Masken",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_LEFTSHIFT+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Key Pos.",
+        "layout": "text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Zeit-Zoom",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_SLASH"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTSHIFT+KEY_0"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Viewer",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTSHIFT+KEY_7"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_COMMA"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_DOT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Keyframe",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_J"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_K"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Ebene ±1",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTALT+KEY_PAGEUP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTALT+KEY_PAGEDOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Schieben",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFT"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Keyframe",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_J"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_K"
+    }
+   },
+   "led_color": "#d080ff"
+  }
+ ],
+ "home_workspace": "ws1"
+}

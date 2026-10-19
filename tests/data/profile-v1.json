@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "id": "konsole",
+  "name": "Konsole",
+  "app": "org.kde.konsole",
+  "round": {"7": {"action": {"type": "shortcut", "keys": "KEY_A"},
+                  "image": {"bg": "#112233", "icon": null, "text": "A", "text_color": "#ffffff"}}},
+  "square": {"15": null},
+  "workspaces": [
+    {"id": "ws1", "name": "Allgemein",
+     "touch_pages": [{"id": "p1", "name": "Seite 1",
+                     "buttons": [{"action": {"type": "noop"}, "image": {"bg": "#000000", "text": "x"}}]}],
+     "encoders": [{"rotate": {"type": "volume"}, "press": {"type": "mute"}, "label": "Laut"}],
+     "wheel": {"rotate": {"type": "scroll"}, "display": "clock", "label": "Rad"}}
+  ],
+  "home_workspace": "ws1"
+}

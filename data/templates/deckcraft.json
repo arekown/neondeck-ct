@@ -1,0 +1,417 @@
+{
+ "version": 2,
+ "id": "deckcraft",
+ "name": "DeckCraft (ArtCraft)",
+ "description": "DeckCraft fokussieren oder starten, Folien anlegen und vorführen, Bearbeiten, Textformat, Ausrichtung und Gruppieren; Regler für Folienwechsel, Schriftgröße, Zoom und Ebenenreihenfolge.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "DeckCraft",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Folien",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "ai.storyteller.deckcraft"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "DeckCraft",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_N"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Neue Folie",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_ENTER"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Schau Anf.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_ENTER"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayer.svg",
+        "text": "Schau hier",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_HOME"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowLeft.svg",
+        "text": "Erste",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_END"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowRight.svg",
+        "text": "Letzte",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Duplikat",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_DELETE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Delete.svg",
+        "text": "Löschen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Befehle",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Format",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Fett",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Kursiv",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_U"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Unterstr.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Links",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_E"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Zentriert",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rechts",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_J"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Blocksatz",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Format kop",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Paste.svg",
+        "text": "Format ein",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Gruppe",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_LEFTSHIFT+KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Aufheben",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTALT+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayer.svg",
+        "text": "Medien",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Folie",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_PAGEUP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_PAGEDOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Schrift",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_COMMA"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_DOT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Zoom",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_SLASH"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_0"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Ebene",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_8"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_9"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Z"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Folie",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_PAGEUP"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_PAGEDOWN"
+    }
+   },
+   "led_color": "#ff9e80"
+  }
+ ],
+ "home_workspace": "ws1"
+}

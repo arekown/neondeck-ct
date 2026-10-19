@@ -1,0 +1,570 @@
+{
+ "version": 2,
+ "id": "soundcraft",
+ "name": "SoundCraft (ArtCraft)",
+ "description": "SoundCraft fokussieren oder starten, Transport und Aufnahme, Clips bearbeiten, Spuren und Edit-Werkzeuge im Pro-Tools-Layout; Regler für Zeitleisten-Zoom, Spurhöhe, Clip-Gain und Nudge.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "SoundCraft",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Transport",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "ai.storyteller.soundcraft"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "SoundCraft",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Play",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F12"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Dictation.svg",
+        "text": "Aufnahme",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_HOME"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPrevTrack.svg",
+        "text": "Anfang",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_END"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaNextTrack.svg",
+        "text": "Ende",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_ENTER"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Bookmark.svg",
+        "text": "Marker",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Loop.svg",
+        "text": "Loop",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Halb",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_0"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SwitchPages.svg",
+        "text": "Mix/Edit",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Bearbeiten",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Kopieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_X"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Aussch.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Paste.svg",
+        "text": "Einfügen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Duplikat",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_E"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Trennen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_H"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Heilen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Zuschn.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_U"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Stille weg",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVolumeMute.svg",
+        "text": "Clip stumm",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_F"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Blenden",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_N"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Neue Spur",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SendMessage.svg",
+        "text": "Bounce",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "Spur & Wkz",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVolumeMute.svg",
+        "text": "Stumm",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaHeadphones.svg",
+        "text": "Solo",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Aufn.-ber.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaHeadphones.svg",
+        "text": "Monitor",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Shuffle",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F2"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Slip",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Spot",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F4"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Grid",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F5"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ZoomIn.svg",
+        "text": "Zoom-Wkz.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F6"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Trim",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F7"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Selector",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F8"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Grabber",
+        "layout": "text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Zoom",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTALT+KEY_A"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_8"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_9"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Spurhöhe",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_DOWN"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_UP"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Clip-Gain",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_DOWN"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_UP"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Nudge",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_SLASH"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHTBRACE"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Zoom",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_8"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_9"
+    }
+   },
+   "led_color": "#00e5c0"
+  }
+ ],
+ "home_workspace": "ws1"
+}

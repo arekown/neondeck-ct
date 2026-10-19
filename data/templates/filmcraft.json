@@ -1,0 +1,573 @@
+{
+ "version": 2,
+ "id": "filmcraft",
+ "name": "FilmCraft (ArtCraft)",
+ "description": "FilmCraft fokussieren oder starten, Wiedergabe mit J/K/L, In/Out, Marker und Schnitt, Schnittwerkzeuge, Bearbeiten; Regler für Bild ±1/±5, Schnittpunkte, Zeitleisten-Zoom und Clip-Lautstärke.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "FilmCraft",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Schnitt",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "ai.storyteller.filmcraft"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "FilmCraft",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Play",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_J"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPrevTrack.svg",
+        "text": "Rückwärts",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_K"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaStop.svg",
+        "text": "Stopp",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaNextTrack.svg",
+        "text": "Vorwärts",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "In-Punkt",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_O"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Out-Punkt",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Bookmark.svg",
+        "text": "Marker",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_K"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Schnitt",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Werkzeuge",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Auswahl",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Rasierm.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Ripple",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_N"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rolling",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Dehnen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_Z"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Slip",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_U"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Slide",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Stift",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_H"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Hand",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ZoomIn.svg",
+        "text": "Zoom",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Text",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Einrasten",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "Bearbeiten",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Zu In",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_O"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Zu Out",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_COMMA"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Heben",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_BACKSLASH"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Extrah.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_DELETE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Delete.svg",
+        "text": "Löschen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_DELETE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Ripple-Lö.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Kopieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Paste.svg",
+        "text": "Einfügen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_X"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Aussch.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFolder.svg",
+        "text": "Import",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SendMessage.svg",
+        "text": "Export",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_RIGHTALT+KEY_MINUS"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SmartZoom.svg",
+        "text": "Sequenz",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Bild",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_SPACE"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFT"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "5 Bilder",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTSHIFT+KEY_LEFT"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTSHIFT+KEY_RIGHT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Schnittpkt",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_UP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_DOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Zeitleiste",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHTALT+KEY_MINUS"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_SLASH"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTSHIFT+KEY_0"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Clip-dB",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHTALT+KEY_8"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHTALT+KEY_9"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Bild",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_LEFT"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_RIGHT"
+    }
+   },
+   "led_color": "#7a3cff"
+  }
+ ],
+ "home_workspace": "ws1"
+}

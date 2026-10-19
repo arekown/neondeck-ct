@@ -1,0 +1,423 @@
+{
+ "version": 2,
+ "id": "blender",
+ "name": "Blender (3D)",
+ "description": "Blender fokussieren oder starten, Ansichten über den Ziffernblock, Rendern, Modus, Greifen/Drehen/Skalieren, Hinzufügen, Duplizieren und Speichern; Regler für Zoom, Bild ±, Ansicht drehen und Verlauf.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Blender",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Ansicht",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.blender.Blender"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cube.svg",
+        "text": "Blender",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Vorne",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP3"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rechts",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP7"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Oben",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP0"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVideoOn.svg",
+        "text": "Kamera",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KP5"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Ortho/Pers",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPDOT"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SmartZoom.svg",
+        "text": "Auswahl",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_HOME"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ZoomInOut.svg",
+        "text": "Alles",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_KPSLASH"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/View.svg",
+        "text": "Lokal",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Shading",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "Vollbild",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F12"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Screenshot.svg",
+        "text": "Rendern",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Bearbeiten",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_TAB"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SwitchPages.svg",
+        "text": "Modus",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Greifen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Drehen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Skalieren",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_A"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Hinzufüg.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Duplikat",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_X"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Delete.svg",
+        "text": "Löschen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Abspielen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_N"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Seitenl.",
+        "layout": "text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Zoom",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_KPDOT"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_KPMINUS"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_KPPLUS"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Bild",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_SPACE"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFT"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Drehen ↔",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_KP4"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_KP6"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Drehen ↕",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_KP2"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_KP8"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Zoom",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_KPMINUS"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_KPPLUS"
+    }
+   },
+   "led_color": "#c86400"
+  }
+ ],
+ "home_workspace": "ws1"
+}

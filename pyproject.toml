@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=77"]  # license als SPDX-Ausdruck (PEP 639)
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neondeck-ct"
+version = "1.0.0"
+description = "Configuration software for the Loupedeck CT on Linux (KDE Plasma 6, Wayland)"
+readme = "README.md"
+license = "LicenseRef-PolyForm-Noncommercial-1.0.0"
+license-files = ["LICENSE"]
+authors = [{name = "arekown"}]
+requires-python = ">=3.13"
+# Laufzeit; tools/install.sh installiert mit --no-deps (die Pakete kommen vom System)
+dependencies = ["PySide6>=6.8", "pyserial", "evdev", "Pillow", "numpy"]
+
+[project.scripts]
+neondeck-ct = "neondeck.__main__:run"
+
+[project.urls]
+Homepage = "https://github.com/arekown/neondeck-ct"
+Repository = "https://github.com/arekown/neondeck-ct"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["F", "E", "W", "B", "BLE", "N", "I", "C90", "SIM", "RET", "PIE", "PERF", "PTH", "ERA",
+          "UP", "SLF", "RUF100", "PLR0912", "PLR0913", "PLR0915", "PLW"]
+ignore = [
+    "E501",  # Zeilenlaenge
+    "N802",  # Qt- und D-Bus-Methodennamen (camelCase ist dort vorgegeben)
+    "N806",  # Grossbuchstaben-Variablen in Funktionen (Farben, Konstanten)
+    "N818",  # Ausnahmenamen ohne Error-Endung
+    "B905",  # zip() ohne strict=
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.pylint]
+max-args = 8
+
+[tool.ruff.lint.per-file-ignores]
+# Tests: zusaetzlich nur C90 und SIM
+"tests/**" = [
+    "B023",  # Schleifenvariable in Hilfsfunktion
+    "N815",  # Qt-Signalnamen in Fakes
+    "RET", "PIE", "PERF", "PTH", "ERA", "UP", "SLF", "RUF100", "PLR0912", "PLR0913", "PLR0915", "PLW",
+]
+"tools/**" = ["SLF"]  # SLF gilt nur fuer src

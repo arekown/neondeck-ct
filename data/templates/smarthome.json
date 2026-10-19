@@ -1,0 +1,268 @@
+{
+ "version": 2,
+ "id": "smarthome",
+ "name": "Smart Home (Home Assistant)",
+ "description": "Webhooks an Home Assistant für Licht an/aus, Helligkeit, Szenen und Schalter; die Adresse http://homeassistant.local:8123/api/webhook/<id> einmal je Taste an die eigenen Webhook-IDs anpassen.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Smart Home",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Smart Home",
+     "buttons": [
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/licht_an"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/BrightnessUp.svg",
+        "text": "Licht an",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/licht_aus"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Sleep.svg",
+        "text": "Licht aus",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/licht_hell"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/BrightnessUp.svg",
+        "text": "Hell",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/licht_gedimmt"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SleepOff.svg",
+        "text": "Gedimmt",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/szene_abend"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Sparkle.svg",
+        "text": "Abend",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/szene_film"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayer.svg",
+        "text": "Film",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/szene_lesen"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Library.svg",
+        "text": "Lesen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/szene_morgen"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/EmojiSmilingFace.svg",
+        "text": "Morgen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/gute_nacht"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Sleep.svg",
+        "text": "Gute Nacht",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/alles_aus"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Shutdown.svg",
+        "text": "Alles aus",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/steckdose_an"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Multi-toggleOn.svg",
+        "text": "Steckd. an",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "http",
+        "method": "POST",
+        "url": "http://homeassistant.local:8123/api/webhook/steckdose_aus"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Multi-toggleOff.svg",
+        "text": "Steckd.aus",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Licht",
+     "rotate": null,
+     "press": {
+      "type": "http",
+      "method": "POST",
+      "url": "http://homeassistant.local:8123/api/webhook/licht_umschalten"
+     },
+     "left": {
+      "type": "http",
+      "method": "POST",
+      "url": "http://homeassistant.local:8123/api/webhook/licht_dunkler"
+     },
+     "right": {
+      "type": "http",
+      "method": "POST",
+      "url": "http://homeassistant.local:8123/api/webhook/licht_heller"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Licht",
+    "left": {
+     "type": "http",
+     "method": "POST",
+     "url": "http://homeassistant.local:8123/api/webhook/licht_dunkler"
+    },
+    "right": {
+     "type": "http",
+     "method": "POST",
+     "url": "http://homeassistant.local:8123/api/webhook/licht_heller"
+    },
+    "tap": {
+     "type": "http",
+     "method": "POST",
+     "url": "http://homeassistant.local:8123/api/webhook/licht_umschalten"
+    }
+   },
+   "led_color": "#00ff60"
+  }
+ ],
+ "home_workspace": "ws1"
+}

@@ -1,0 +1,258 @@
+{
+ "version": 2,
+ "id": "grafik",
+ "name": "Grafik (GIMP, Inkscape, Blender)",
+ "description": "GIMP, Inkscape und Blender fokussieren oder starten, Bildschirmfoto, Rückgängig/Wiederholen, Kopieren/Einfügen, Speichern und Exportieren; Regler für Zoom, Verlauf und Ebenen.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Grafik",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Grafik",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.gimp.GIMP"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "GIMP",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.inkscape.Inkscape"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Inkscape",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.blender.Blender"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cube.svg",
+        "text": "Blender",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "screenshot"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Screenshot.svg",
+        "text": "Foto",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Zurück",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wieder",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Kopieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Paste.svg",
+        "text": "Einfügen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_E"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SendMessage.svg",
+        "text": "Export",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_A"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Alles",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_A"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Nichts",
+        "layout": "text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Zoom",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_1"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_KPMINUS"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_KPPLUS"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Ebene",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_PAGEUP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_PAGEDOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Zoom",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_KPMINUS"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_KPPLUS"
+    }
+   },
+   "led_color": "#f9f002"
+  }
+ ],
+ "home_workspace": "ws1"
+}

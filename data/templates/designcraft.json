@@ -1,0 +1,570 @@
+{
+ "version": 2,
+ "id": "designcraft",
+ "name": "DesignCraft (ArtCraft)",
+ "description": "DesignCraft fokussieren oder starten, Werkzeuge im InDesign-Layout, Objekte und Textformat, Ansicht, Export und Paletten; Regler für Zoom, Seite, Druckbogen, Punktgröße und Ebenenreihenfolge.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "DesignCraft",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Werkzeuge",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "ai.storyteller.designcraft"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "DesignCrft",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Auswahl",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_A"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Direkt",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Text",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_RIGHTALT+KEY_MINUS"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Linie",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Stift",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_F"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rahmen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rechteck",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Ellipse.svg",
+        "text": "Ellipse",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Drehen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Skalieren",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_H"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Hand",
+        "layout": "text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Objekt & Text",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückg.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederh.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Gruppe",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Aufheben",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Lock.svg",
+        "text": "Sperren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Fett",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Kursiv",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_U"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Unterstr.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Links",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Mitte",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rechts",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_D"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFolder.svg",
+        "text": "Platzieren",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "Ansicht",
+     "buttons": [
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFile.svg",
+        "text": "Speichern",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_E"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SendMessage.svg",
+        "text": "PNG-Export",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_P"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Print.svg",
+        "text": "Drucken",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_W"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/View.svg",
+        "text": "Vorschau",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_0"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SmartZoom.svg",
+        "text": "Einpassen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_1"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "100 %",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_0"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Druckbog.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_J"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Gehe Seite",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_TAB"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Paletten",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Zeichen",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTALT+KEY_T"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Absatz",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Pipette",
+        "layout": "text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Zoom",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_0"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_SLASH"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_0"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Seite",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTSHIFT+KEY_PAGEUP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTSHIFT+KEY_PAGEDOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Druckbog.",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTALT+KEY_PAGEUP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTALT+KEY_PAGEDOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Punktgr.",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_COMMA"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_DOT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Ebene",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_8"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTALT+KEY_9"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Zoom",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_SLASH"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_0"
+    }
+   },
+   "led_color": "#ff40b0"
+  }
+ ],
+ "home_workspace": "ws1"
+}

@@ -1,0 +1,420 @@
+{
+ "version": 2,
+ "id": "videoschnitt",
+ "name": "Videoschnitt (Kdenlive, DaVinci Resolve)",
+ "description": "Kdenlive und DaVinci Resolve fokussieren oder starten, Wiedergabe mit J/K/L, In/Out, Schneiden, Marker/Guide und Werkzeuge je Programm; Rad bildweise, Regler für Zeitleisten-Zoom und Verlauf.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Videoschnitt",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Kdenlive",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.kde.kdenlive"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Kdenlive",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Play",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_J"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPrevTrack.svg",
+        "text": "Rückwärts",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_K"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaStop.svg",
+        "text": "Stopp",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaNextTrack.svg",
+        "text": "Vorwärts",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "In-Punkt",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_O"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Out-Punkt",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTSHIFT+KEY_R"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Schneiden",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_G"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Bookmark.svg",
+        "text": "Guide",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_S"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Auswahl",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_X"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Rasierm.",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_ENTER"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SendMessage.svg",
+        "text": "Rendern",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Resolve",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "com.blackmagicdesign.resolve"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Resolve",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_SPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Play",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_J"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPrevTrack.svg",
+        "text": "Rückwärts",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_K"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaStop.svg",
+        "text": "Stopp",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_L"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaNextTrack.svg",
+        "text": "Vorwärts",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_I"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "In-Punkt",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_O"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Out-Punkt",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Cut.svg",
+        "text": "Schneiden",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_M"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Bookmark.svg",
+        "text": "Marker",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_A"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Auswahl",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_B"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "Klinge",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_BACKSPACE"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Delete.svg",
+        "text": "Löschen",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Bild",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_SPACE"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFT"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_RIGHT"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Zoom KDL",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_SLASH"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_RIGHTBRACE"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Zoom DVR",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_SLASH"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_0"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Schnitt DVR",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_UP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_DOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Verlauf",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_Y"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Bild",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_LEFT"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_RIGHT"
+    }
+   },
+   "led_color": "#ffb000"
+  }
+ ],
+ "home_workspace": "ws1"
+}

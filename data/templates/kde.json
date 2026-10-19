@@ -1,0 +1,386 @@
+{
+ "version": 2,
+ "id": "kde",
+ "name": "KDE Fenster & Arbeitsflächen",
+ "description": "Übersicht, Arbeitsflächen, Fenster wechseln, andocken und schließen (KWin-Kürzel).",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {
+  "7": {
+   "action": {
+    "type": "kde",
+    "name": "overview"
+   }
+  },
+  "8": {
+   "action": {
+    "type": "kde",
+    "name": "desktop_previous"
+   }
+  },
+  "9": {
+   "action": {
+    "type": "kde",
+    "name": "desktop_next"
+   }
+  },
+  "10": {
+   "action": {
+    "type": "kde",
+    "name": "show_desktop"
+   }
+  }
+ },
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Fenster",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Arbeitsflächen",
+     "buttons": [
+      {
+       "action": {
+        "type": "kde",
+        "name": "overview"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/View.svg",
+        "text": "Übersicht",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "show_desktop"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/HideDesktop.svg",
+        "text": "Desktop",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "window_switcher"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SwitchPages.svg",
+        "text": "Fenster wechseln",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "dynamic_folder",
+        "kind": "windows"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "Fensterliste",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "desktop_previous"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowLeft.svg",
+        "text": "Fläche zurück",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "desktop_next"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ArrowRight.svg",
+        "text": "Fläche vor",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "desktop_add"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "+ Fläche",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "desktop_remove"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "− Fläche",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "search"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SearchComputer.svg",
+        "text": "Suche",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "files"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFolder.svg",
+        "text": "Dateien",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "screenshot"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Screenshot.svg",
+        "text": "Bildschirmfoto",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "lock"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Lock.svg",
+        "text": "Sperren",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Fensteraktionen",
+     "buttons": [
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Maximize"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ZoomIn.svg",
+        "text": "Maximieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Minimize"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ZoomOut.svg",
+        "text": "Minimieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Fullscreen"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SmartZoom.svg",
+        "text": "Vollbild",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Close"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Close.svg",
+        "text": "Schließen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Quick Tile Left"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/PillArrowLeft.svg",
+        "text": "Links",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Quick Tile Right"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/PillArrowRight.svg",
+        "text": "Rechts",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window Above Other Windows"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Star.svg",
+        "text": "Im Vordergrund",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "kwin",
+        "name": "Window to Next Screen"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Devices.svg",
+        "text": "Nächster Bildschirm",
+        "layout": "icon_text"
+       }
+      },
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Arbeitsfläche",
+     "rotate": {
+      "type": "kde_adjust",
+      "left": "desktop_previous",
+      "right": "desktop_next"
+     },
+     "press": {
+      "type": "kde",
+      "name": "overview"
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "Helligkeit",
+     "rotate": {
+      "type": "brightness"
+     },
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "rotate": {
+     "type": "kde_adjust",
+     "left": "desktop_previous",
+     "right": "desktop_next"
+    },
+    "display": "label",
+    "label": "Arbeitsfläche",
+    "tap": {
+     "type": "kde",
+     "name": "overview"
+    }
+   },
+   "led_color": "#4f8cff"
+  }
+ ],
+ "home_workspace": "ws1"
+}

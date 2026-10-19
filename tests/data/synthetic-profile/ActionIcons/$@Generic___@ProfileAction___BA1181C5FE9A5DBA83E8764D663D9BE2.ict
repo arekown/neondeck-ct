@@ -1,0 +1,20 @@
+{
+  "backgroundColor": 4278190080,
+  "items": [
+    {
+      "$type": "Loupedeck.Service.ActionIconImageItem, LoupedeckShared",
+      "image": "PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cG9seWdvbiBwb2ludHM9IjE2LDQgMjgsMjggNCwyOCIgZmlsbD0iIzIyMjQyNSIvPjwvc3ZnPg==",
+      "imageFileName": null,
+      "imageColor": 4294967295,
+      "imageRotation": "None",
+      "isVisible": true,
+      "itemType": "Image",
+      "area": {
+        "x": 17,
+        "y": 0,
+        "width": 65,
+        "height": 65
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+ "version": 2,
+ "id": "gaming",
+ "name": "Gaming (Steam, Lutris, Discord)",
+ "description": "Steam, Lutris, Heroic und Discord fokussieren oder starten, Mikrofon und Ton stumm, Audioausgang wechseln, Lautstärke-Mixer, MangoHud, Bildschirmfoto; Regler je Anwendung.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Gaming",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Gaming",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "steam"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Steam",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "net.lutris.Lutris"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Lutris",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "com.heroicgameslauncher.hgl"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenApp.svg",
+        "text": "Heroic",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "com.discordapp.Discord"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ChatMessage.svg",
+        "text": "Discord",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "mic_mute"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaMuteMic.svg",
+        "text": "Mikro",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "mute_toggle"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVolumeMute.svg",
+        "text": "Ton aus",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "audio_output_next"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaHeadphones.svg",
+        "text": "Ausgang",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "dynamic_folder",
+        "kind": "mixer"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/BarGraph.svg",
+        "text": "Mixer",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_RIGHTSHIFT+KEY_F12"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Monitor.svg",
+        "text": "HUD",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "screenshot"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Screenshot.svg",
+        "text": "Foto",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "media",
+        "key": "play_pause"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Musik",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "overview"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SwitchPages.svg",
+        "text": "Fenster",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "App 1",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 0
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 0
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "App 2",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 1
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 1
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "App 3",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 2
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 2
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "Helligkeit",
+     "rotate": {
+      "type": "brightness"
+     },
+     "press": {
+      "type": "brightness_reset"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "arc",
+    "label": "Lautstärke",
+    "rotate": {
+     "type": "volume"
+    },
+    "tap": {
+     "type": "mute_toggle"
+    }
+   },
+   "led_color": "#ff003c"
+  }
+ ],
+ "home_workspace": "ws1"
+}

@@ -1,0 +1,808 @@
+{
+  "$type": "Loupedeck.Service.ApplicationProfile, LoupedeckService",
+  "name": "D1E48AE30A5D5565AC6381FFFCB64EBC",
+  "profileFlags": "None",
+  "displayName": "Default",
+  "description": "",
+  "deviceType": "Loupedeck20",
+  "applicationName": "@_defaultwin",
+  "nativePluginName": "DefaultWin",
+  "hasNativePlugin": true,
+  "additionalNativePluginNames": [],
+  "lastModifiedTimeUtc": "2026-01-01T00:00:00Z",
+  "actionImages90": null,
+  "actionImages60": null,
+  "wheelImages": null,
+  "actionColors": null,
+  "profileCommands": [],
+  "profileAdjustments": [],
+  "layout": {
+    "$type": "Loupedeck.Service.ProfileLayout, LoupedeckService",
+    "deviceType": "Loupedeck20",
+    "profileFlags": "None",
+    "layoutModes": [
+      {
+        "$type": "Loupedeck.Service.ProfileLayoutMode, LoupedeckService",
+        "deviceType": "None",
+        "modeName": "System",
+        "parentModeName": null,
+        "actions": null,
+        "dynamicButtonPages": null,
+        "dynamicEncoderPages": null,
+        "touchPages": [
+          {
+            "$type": "Loupedeck.Service.ProfileLayoutButtonPage, LoupedeckService",
+            "name": "A2E797627A2058118405569679605E7F",
+            "displayName": "Page One",
+            "description": null,
+            "controls": [
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___@ButtonClock",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$DefaultWin___#DynamicFolder___DynamicFolder#Loupedeck.DefaultWinPlugin.VolumeMixerOutputDynamicFolder",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$DefaultWin___#DynamicFolder___DynamicFolder#Loupedeck.DefaultWinPlugin.TaskSwitcherDynamicFolder",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$DefaultWin___LockWorkstation",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___Loupedeck.GenericPlugin.StopwatchDynamicAction",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___Loupedeck.GenericPlugin.DateTimeDynamicAction___WeekNumber",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___Loupedeck.GenericPlugin.DateTimeDynamicAction___Date",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$DefaultWin___AddDesktop",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$DefaultWin___WindowsExplorer",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$DefaultWin___WindowsSearch",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$DefaultWin___WindowsEmoji",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$DefaultWin___WindowsScreenshot",
+                "fnPressAction": null
+              }
+            ]
+          },
+          {
+            "$type": "Loupedeck.Service.ProfileLayoutButtonPage, LoupedeckService",
+            "name": "6A8E630AAC935CFEA802EE8B366EE6C0",
+            "displayName": "Page Two",
+            "description": null,
+            "controls": [
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___@Macro___727EBAD9D05B59F8AE52ADA46A071F06",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___@Macro___4915321BF9A152528B59B42DDF07D6FD",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___@Macro___2BDEB3C6FC725C4C851C0450B91EED60",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___@Macro___F754CEAD7EF25814B88F3F0E358745C8",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": null,
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": null,
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": null,
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": null,
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___@Macro___430DBE13107856E8A948771B7A32CA45",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___@Macro___E6E6C159D7015FAE8B84CAFCACD83EA1",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": "$@Generic___@ActivateLoupedeckConfiguration___System",
+                "fnPressAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+                "pressAction": null,
+                "fnPressAction": null
+              }
+            ]
+          }
+        ],
+        "encoderPages": [
+          {
+            "$type": "Loupedeck.Service.ProfileLayoutEncoderPage, LoupedeckService",
+            "name": "469F92C47CDC5160960F7173519CB6DA",
+            "displayName": "Dials",
+            "description": null,
+            "controls": [
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutEncoder, LoupedeckService",
+                "pressAction": "$DefaultWin___ResetVolume",
+                "fnPressAction": null,
+                "rotateAction": "$DefaultWin___Volume",
+                "fnRotateAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutEncoder, LoupedeckService",
+                "pressAction": "$DefaultWin___MediaPlayPause",
+                "fnPressAction": null,
+                "rotateAction": "$@Generic___@MacroAdjustment___D56DC98B62E75BFA861F13A858B22325",
+                "fnRotateAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutEncoder, LoupedeckService",
+                "pressAction": "$@Generic___@ProfileAction___291BD04AA02852A88B4F3DB194EFC512",
+                "fnPressAction": null,
+                "rotateAction": "$@Generic___@MacroAdjustment___66AB51F9CD875992B077042BB366CFB2",
+                "fnRotateAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutEncoder, LoupedeckService",
+                "pressAction": null,
+                "fnPressAction": null,
+                "rotateAction": null,
+                "fnRotateAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutEncoder, LoupedeckService",
+                "pressAction": "$DefaultWin___ResetBrightness",
+                "fnPressAction": null,
+                "rotateAction": "$DefaultWin___Brightness",
+                "fnRotateAction": null
+              },
+              {
+                "$type": "Loupedeck.Service.ProfileLayoutEncoder, LoupedeckService",
+                "pressAction": "$DefaultWin___CloseDesktop",
+                "fnPressAction": null,
+                "rotateAction": "$@Generic___@MacroAdjustment___42FBFCB4B94354BBB9703B5354624AC7",
+                "fnRotateAction": null
+              }
+            ]
+          }
+        ],
+        "wheelPages": [
+          {
+            "$type": "Loupedeck.Service.ProfileLayoutWheelPage, LoupedeckService",
+            "name": "69E2E868AC3C5DAEA54F64CCDC7662FE",
+            "displayName": "Dial Clock",
+            "description": null,
+            "templateName": "WheelToolAnalogClock",
+            "parameters": {
+              "$type": "Loupedeck.StringDictionaryNoCase, PluginApi",
+              "adjustment": "$@Generic___@MacroAdjustment___66AB51F9CD875992B077042BB366CFB2",
+              "actions": "$@Generic___@ButtonClock"
+            }
+          },
+          {
+            "$type": "Loupedeck.Service.ProfileLayoutWheelPage, LoupedeckService",
+            "name": "6A1322D20C9A5151889AC0E811E19D60",
+            "displayName": "Dial Plain",
+            "description": null,
+            "templateName": "WheelToolPlain",
+            "parameters": {
+              "$type": "Loupedeck.StringDictionaryNoCase, PluginApi",
+              "adjustment": "$@Generic___@MacroAdjustment___42FBFCB4B94354BBB9703B5354624AC7"
+            }
+          }
+        ],
+        "workspaces": [
+          {
+            "$type": "Loupedeck.Service.ProfileLayoutWorkspace20, LoupedeckService",
+            "name": "A7ABDB9E5FC052B4824617C834BA8F2A",
+            "displayName": "Alpha Workspace",
+            "description": "",
+            "touchPageNames": [
+              "A2E797627A2058118405569679605E7F"
+            ],
+            "encoderPageNames": [
+              "469F92C47CDC5160960F7173519CB6DA"
+            ],
+            "wheelPageNames": [
+              "69E2E868AC3C5DAEA54F64CCDC7662FE"
+            ],
+            "activationActions": []
+          },
+          {
+            "$type": "Loupedeck.Service.ProfileLayoutWorkspace20, LoupedeckService",
+            "name": "814902E62EDE5CD48B36EF8A062F6C7A",
+            "displayName": "Beta Workspace",
+            "description": "",
+            "touchPageNames": [
+              "6A8E630AAC935CFEA802EE8B366EE6C0"
+            ],
+            "encoderPageNames": [],
+            "wheelPageNames": [
+              "6A1322D20C9A5151889AC0E811E19D60"
+            ],
+            "activationActions": []
+          }
+        ],
+        "homeWorkspaceName": "A7ABDB9E5FC052B4824617C834BA8F2A"
+      }
+    ],
+    "roundPage": {
+      "$type": "Loupedeck.Service.ProfileLayoutButtonPage, LoupedeckService",
+      "name": "B0746131091A5816BF601C7857E95F0F",
+      "displayName": "",
+      "description": null,
+      "controls": [
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": "$@Generic___@ChangeWorkspace___System|A7ABDB9E5FC052B4824617C834BA8F2A",
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": "$@Generic___@ChangeWorkspace___System|814902E62EDE5CD48B36EF8A062F6C7A",
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        }
+      ],
+      "dynamicPageName": null,
+      "dynamicPagePluginName": null,
+      "dynamicPageNumber": 0
+    },
+    "squarePage": {
+      "$type": "Loupedeck.Service.ProfileLayoutButtonPage, LoupedeckService",
+      "name": "0EA6296A3CD75F9A88ABD80BAD76D1DA",
+      "displayName": "",
+      "description": null,
+      "controls": [
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": "$@Generic___@ProfileAction___BA1181C5FE9A5DBA83E8764D663D9BE2",
+          "fnPressAction": "$@Generic___@ProfileAction___CCB94EE3F0A959D78CE1BB2340FCBA23"
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": "$@Generic___@ProfileAction___4154B1E1408550DE90A1EB40C12D50F0",
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": null,
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": "$@Generic___@ProfileAction___32006C824A175102AF429EEAA7FBAA4C",
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": "$@Generic___@ProfileAction___72CCA596C996570FA2B612B0FA39238E",
+          "fnPressAction": null
+        },
+        {
+          "$type": "Loupedeck.Service.ProfileLayoutButton, LoupedeckService",
+          "pressAction": "$DefaultWin___WindowsActions",
+          "fnPressAction": null
+        }
+      ],
+      "dynamicPageName": null,
+      "dynamicPagePluginName": null,
+      "dynamicPageNumber": 0
+    }
+  },
+  "macroCommands": [
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "727EBAD9D05B59F8AE52ADA46A071F06",
+      "displayName": "Console Alpha",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [
+        {
+          "$type": "Loupedeck.Service.MacroActionEditorCommand, LoupedeckService",
+          "name": "5DF8B3B9C7425B6EA0498C4F8F2878B9",
+          "templateName": "$@Generic___@KeyboardKey",
+          "actionParameters": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "keyboardKey": "Windows+KeyR___1___Windows+KeyR___"
+          }
+        },
+        {
+          "$type": "Loupedeck.Service.MacroActionEditorCommand, LoupedeckService",
+          "name": "769DE2BB7ED8529AB337E2E3B71C45A2",
+          "templateName": "$@Generic___@KeyboardKey",
+          "actionParameters": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "keyboardKey": "Return___1___Return___"
+          }
+        }
+      ],
+      "isMultiState": false,
+      "actions": [
+        "5DF8B3B9C7425B6EA0498C4F8F2878B9",
+        "$@Generic___@TypeText___cmd",
+        "$@Generic___@Sleep___100",
+        "769DE2BB7ED8529AB337E2E3B71C45A2"
+      ]
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "4915321BF9A152528B59B42DDF07D6FD",
+      "displayName": "Net\\nInfo",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [
+        {
+          "$type": "Loupedeck.Service.MacroActionEditorCommand, LoupedeckService",
+          "name": "E4EAA1148B3D552A910A9426495FB0D1",
+          "templateName": "$@Generic___@KeyboardKey",
+          "actionParameters": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "keyboardKey": "Windows+KeyR___1___Windows+KeyR___"
+          }
+        },
+        {
+          "$type": "Loupedeck.Service.MacroActionEditorCommand, LoupedeckService",
+          "name": "064AD83B607159E8BFBD362A481A094E",
+          "templateName": "$@Generic___@KeyboardKey",
+          "actionParameters": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "keyboardKey": "Return___1___Return___"
+          }
+        },
+        {
+          "$type": "Loupedeck.Service.MacroActionEditorCommand, LoupedeckService",
+          "name": "C49964E3C5A95F4CBC4A5804B867B2BA",
+          "templateName": "$@Generic___@KeyboardKey",
+          "actionParameters": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "keyboardKey": "Return___1___Return___"
+          }
+        }
+      ],
+      "isMultiState": false,
+      "actions": [
+        "E4EAA1148B3D552A910A9426495FB0D1",
+        "$@Generic___@Sleep___100",
+        "$@Generic___@TypeText___cmd",
+        "064AD83B607159E8BFBD362A481A094E",
+        "$@Generic___@Sleep___200",
+        "$@Generic___@TypeText___ipconfig",
+        "C49964E3C5A95F4CBC4A5804B867B2BA"
+      ]
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "2BDEB3C6FC725C4C851C0450B91EED60",
+      "displayName": "Video Site",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [],
+      "isMultiState": false,
+      "actions": [
+        "$@Generic___@ExecuteApplication___https://video.example.org/"
+      ]
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "F754CEAD7EF25814B88F3F0E358745C8",
+      "displayName": "Social Site",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [],
+      "isMultiState": false,
+      "actions": [
+        "$@Generic___@ExecuteApplication___https://social.example.org"
+      ]
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "430DBE13107856E8A948771B7A32CA45",
+      "displayName": "Fox Browser",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [],
+      "isMultiState": false,
+      "actions": [
+        "$@Generic___@ExecuteApplication___C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+      ]
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "E6E6C159D7015FAE8B84CAFCACD83EA1",
+      "displayName": "Chrome Browser",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [],
+      "isMultiState": false,
+      "actions": [
+        "$@Generic___@ExecuteApplication___C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "$@Generic___@ExecuteApplication___C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+      ]
+    }
+  ],
+  "macroAdjustments": [
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroAdjustment, LoupedeckService",
+      "isCommand": false,
+      "name": "D56DC98B62E75BFA861F13A858B22325",
+      "displayName": "Track Skipper",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": null,
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [],
+      "actionsBefore": [],
+      "actionsLeft": [
+        "$DefaultWin___MediaPrevTrack"
+      ],
+      "actionsRight": [
+        "$DefaultWin___MediaNextTrack"
+      ],
+      "actionsReset": []
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroAdjustment, LoupedeckService",
+      "isCommand": false,
+      "name": "66AB51F9CD875992B077042BB366CFB2",
+      "displayName": "Scroller",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": null,
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [
+        {
+          "$type": "Loupedeck.Service.MacroActionEditorCommand, LoupedeckService",
+          "name": "D1EE1ED02A7B58AD82782F8CBCDB9953",
+          "templateName": "$@Generic___@KeyboardKey",
+          "actionParameters": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "keyboardKey": "ArrowUp___1___ArrowUp___"
+          }
+        },
+        {
+          "$type": "Loupedeck.Service.MacroActionEditorCommand, LoupedeckService",
+          "name": "7ADE2873340C5A2786B9FD3BF561347D",
+          "templateName": "$@Generic___@KeyboardKey",
+          "actionParameters": {
+            "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+            "keyboardKey": "ArrowDown___1___ArrowDown___"
+          }
+        }
+      ],
+      "actionsBefore": [],
+      "actionsLeft": [
+        "D1EE1ED02A7B58AD82782F8CBCDB9953"
+      ],
+      "actionsRight": [
+        "7ADE2873340C5A2786B9FD3BF561347D"
+      ],
+      "actionsReset": []
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileMacroAdjustment, LoupedeckService",
+      "isCommand": false,
+      "name": "42FBFCB4B94354BBB9703B5354624AC7",
+      "displayName": "Desk Hopper",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": null,
+      "supportedOs": "All",
+      "supportedModes": [
+        "System"
+      ],
+      "showAsSingleAction": false,
+      "actionEditorCommands": [],
+      "actionsBefore": [],
+      "actionsLeft": [
+        "$DefaultWin___PreviousDesktop"
+      ],
+      "actionsRight": [
+        "$DefaultWin___NextDesktop"
+      ],
+      "actionsReset": []
+    }
+  ],
+  "profileActions": [
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "$@Generic___@ProfileAction___BA1181C5FE9A5DBA83E8764D663D9BE2",
+      "templateActionName": "$@Generic___@KeyboardKey",
+      "actionParameters": {
+        "$type": "Loupedeck.ActionEditorActionParameters, PluginApi",
+        "parameters": {
+          "$type": "Loupedeck.StringDictionaryNoCase, PluginApi",
+          "keyboardKey": "ArrowUp___1___ArrowUp___"
+        },
+        "count": 1
+      },
+      "displayName": "ArrowUp",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "isProfileAction": true,
+      "isMultiState": false,
+      "isResetCommand": false,
+      "adjustmentName": null,
+      "states": null
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "$@Generic___@ProfileAction___4154B1E1408550DE90A1EB40C12D50F0",
+      "templateActionName": "$@Generic___@KeyboardKey",
+      "actionParameters": {
+        "$type": "Loupedeck.ActionEditorActionParameters, PluginApi",
+        "parameters": {
+          "$type": "Loupedeck.StringDictionaryNoCase, PluginApi",
+          "keyboardKey": "ArrowLeft___1___ArrowLeft___"
+        },
+        "count": 1
+      },
+      "displayName": "ArrowLeft",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "isProfileAction": true,
+      "isMultiState": false,
+      "isResetCommand": false,
+      "adjustmentName": null,
+      "states": null
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "$@Generic___@ProfileAction___32006C824A175102AF429EEAA7FBAA4C",
+      "templateActionName": "$@Generic___@KeyboardKey",
+      "actionParameters": {
+        "$type": "Loupedeck.ActionEditorActionParameters, PluginApi",
+        "parameters": {
+          "$type": "Loupedeck.StringDictionaryNoCase, PluginApi",
+          "keyboardKey": "ArrowDown___1___ArrowDown___"
+        },
+        "count": 1
+      },
+      "displayName": "ArrowDown",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "isProfileAction": true,
+      "isMultiState": false,
+      "isResetCommand": false,
+      "adjustmentName": null,
+      "states": null
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "$@Generic___@ProfileAction___72CCA596C996570FA2B612B0FA39238E",
+      "templateActionName": "$@Generic___@KeyboardKey",
+      "actionParameters": {
+        "$type": "Loupedeck.ActionEditorActionParameters, PluginApi",
+        "parameters": {
+          "$type": "Loupedeck.StringDictionaryNoCase, PluginApi",
+          "keyboardKey": "ArrowRight___1___ArrowRight___"
+        },
+        "count": 1
+      },
+      "displayName": "ArrowRight",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "isProfileAction": true,
+      "isMultiState": false,
+      "isResetCommand": false,
+      "adjustmentName": null,
+      "states": null
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "$@Generic___@ProfileAction___291BD04AA02852A88B4F3DB194EFC512",
+      "templateActionName": "$@Generic___@KeyboardKey",
+      "actionParameters": {
+        "$type": "Loupedeck.ActionEditorActionParameters, PluginApi",
+        "parameters": {
+          "$type": "Loupedeck.StringDictionaryNoCase, PluginApi",
+          "keyboardKey": "PageDown___1___PageDown___"
+        },
+        "count": 1
+      },
+      "displayName": "PageDown",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "isProfileAction": true,
+      "isMultiState": false,
+      "isResetCommand": false,
+      "adjustmentName": null,
+      "states": null
+    },
+    {
+      "$type": "Loupedeck.Service.ApplicationProfileCommand, LoupedeckService",
+      "isCommand": true,
+      "name": "$@Generic___@ProfileAction___CCB94EE3F0A959D78CE1BB2340FCBA23",
+      "templateActionName": "$@Generic___@KeyboardKey",
+      "actionParameters": {
+        "$type": "Loupedeck.ActionEditorActionParameters, PluginApi",
+        "parameters": {
+          "$type": "Loupedeck.StringDictionaryNoCase, PluginApi",
+          "keyboardKey": "Home___1___Home___"
+        },
+        "count": 1
+      },
+      "displayName": "Home",
+      "description": "",
+      "groupName": "Eigene",
+      "superGroupName": "@macro",
+      "isProfileAction": true,
+      "isMultiState": false,
+      "isResetCommand": false,
+      "adjustmentName": null,
+      "states": null
+    }
+  ]
+}

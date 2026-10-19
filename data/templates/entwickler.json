@@ -1,0 +1,285 @@
+{
+ "version": 2,
+ "id": "entwickler",
+ "name": "Entwickler (Konsole, Git, Editor)",
+ "description": "Konsole, Kate und Dolphin starten, Git-Befehle im Terminal, Bearbeiten-Kürzel; Regler für Zeilen, Seiten, Zoom und Tabs.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {
+  "7": {
+   "action": {
+    "type": "hotkey",
+    "keys": "KEY_LEFTCTRL+KEY_S"
+   }
+  },
+  "8": {
+   "action": {
+    "type": "hotkey",
+    "keys": "KEY_LEFTCTRL+KEY_F"
+   }
+  }
+ },
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Entwicklung",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Werkzeuge",
+     "buttons": [
+      {
+       "action": {
+        "type": "run",
+        "command": "konsole"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Keyboard.svg",
+        "text": "Konsole",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "run",
+        "command": "kate"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Parchment.svg",
+        "text": "Kate",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "files"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/OpenFolder.svg",
+        "text": "Dateien",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "search"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SearchComputer.svg",
+        "text": "Suche",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "git status",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "git status",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "git pull",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "git pull",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "git log --oneline -20",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "git log",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "command",
+        "command": "git diff",
+        "terminal": true,
+        "hold": true
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": null,
+        "text": "git diff",
+        "layout": "text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_C"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Copy.svg",
+        "text": "Kopieren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Paste.svg",
+        "text": "Einfügen",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Undo.svg",
+        "text": "Rückgängig",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTCTRL+KEY_LEFTSHIFT+KEY_Y"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Redo.svg",
+        "text": "Wiederholen",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Zeilen",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_UP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_DOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Seiten",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_PAGEUP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_PAGEDOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Zoom",
+     "rotate": null,
+     "press": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_0"
+     },
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_KPMINUS"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_KPPLUS"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Tabs",
+     "rotate": null,
+     "press": null,
+     "left": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_PAGEUP"
+     },
+     "right": {
+      "type": "hotkey",
+      "keys": "KEY_LEFTCTRL+KEY_PAGEDOWN"
+     },
+     "strip": "name_value"
+    },
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_UP"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_DOWN"
+    },
+    "display": "label",
+    "label": "Scrollen"
+   },
+   "led_color": "#00ff9f"
+  }
+ ],
+ "home_workspace": "ws1"
+}

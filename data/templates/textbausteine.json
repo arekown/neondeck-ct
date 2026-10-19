@@ -1,0 +1,237 @@
+{
+ "version": 2,
+ "id": "textbausteine",
+ "name": "Textbausteine (Mail, Briefe)",
+ "description": "Häufige Texte auf Knopfdruck: Anrede, Grüße, Signatur, Adresse, E-Mail, Telefon, IBAN, Dank und Rückmeldung, dazu das heutige Datum; Platzhalter in eckigen Klammern einmal anpassen.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Textbausteine",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Texte",
+     "buttons": [
+      {
+       "action": {
+        "type": "text",
+        "text": "Hallo [Name],\n\n"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SpeechBubbleRound.svg",
+        "text": "Hallo",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "Sehr geehrte Damen und Herren,\n\n"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SpeechBubbleSquare.svg",
+        "text": "Anrede",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "Viele Grüße\n[Dein Name]"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/EmojiSmilingFace.svg",
+        "text": "Grüße",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "Mit freundlichen Grüßen\n[Dein Name]"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Parchment.svg",
+        "text": "MfG",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "-- \n[Dein Name]\n[Firma]\nTel. [Telefon]\n[deine@mail.de]"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/User.svg",
+        "text": "Signatur",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "[Dein Name]\n[Straße Hausnummer]\n[PLZ Ort]"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Home.svg",
+        "text": "Adresse",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "[deine@mail.de]"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SendMessage.svg",
+        "text": "E-Mail",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "[Telefon]"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SpeechBubbleRounded.svg",
+        "text": "Telefon",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "[IBAN]"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Lock.svg",
+        "text": "IBAN",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "Vielen Dank!"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/ThumbsUp.svg",
+        "text": "Danke!",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "text",
+        "text": "Ich bin gerade unterwegs und melde mich später."
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Clock.svg",
+        "text": "Später",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "date",
+        "format": "date"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/CalendarDate.svg",
+        "text": "Datum",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "label",
+    "label": "Scrollen",
+    "left": {
+     "type": "hotkey",
+     "keys": "KEY_UP"
+    },
+    "right": {
+     "type": "hotkey",
+     "keys": "KEY_DOWN"
+    }
+   },
+   "led_color": "#ffff99"
+  }
+ ],
+ "home_workspace": "ws1"
+}

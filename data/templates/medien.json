@@ -1,0 +1,283 @@
+{
+ "version": 2,
+ "id": "medien",
+ "name": "Medien & Lautstärke",
+ "description": "Wiedergabe, Lautstärke, Mikrofon, Audioausgang und Lautstärke-Mixer je Anwendung.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {
+  "7": {
+   "action": {
+    "type": "media",
+    "key": "play_pause"
+   }
+  },
+  "8": {
+   "action": {
+    "type": "media",
+    "key": "previous"
+   }
+  },
+  "9": {
+   "action": {
+    "type": "media",
+    "key": "next"
+   }
+  },
+  "10": {
+   "action": {
+    "type": "mute_toggle"
+   }
+  }
+ },
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "Medien",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "Wiedergabe",
+     "buttons": [
+      {
+       "action": {
+        "type": "media",
+        "key": "play_pause"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPlayPause.svg",
+        "text": "Play/Pause",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "media",
+        "key": "previous"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaPrevTrack.svg",
+        "text": "Zurück",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "media",
+        "key": "next"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaNextTrack.svg",
+        "text": "Weiter",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "media",
+        "key": "stop"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaStop.svg",
+        "text": "Stopp",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "mute_toggle"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaVolume.svg",
+        "text": "Ton",
+        "layout": "icon_text"
+       },
+       "state_source": {
+        "type": "mute"
+       },
+       "states": [
+        {
+         "image": {
+          "bg": "#000000",
+          "icon": "svg:icons/MediaVolume.svg",
+          "text": "Ton an",
+          "layout": "icon_text"
+         }
+        },
+        {
+         "image": {
+          "bg": "#5a0010",
+          "icon": "svg:icons/MediaVolumeMute.svg",
+          "text": "Stumm",
+          "layout": "icon_text"
+         }
+        }
+       ]
+      },
+      {
+       "action": {
+        "type": "mic_mute"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaUnmuteMic.svg",
+        "text": "Mikrofon",
+        "layout": "icon_text"
+       },
+       "state_source": {
+        "type": "mic_mute"
+       },
+       "states": [
+        {
+         "image": {
+          "bg": "#000000",
+          "icon": "svg:icons/MediaUnmuteMic.svg",
+          "text": "Mikro an",
+          "layout": "icon_text"
+         }
+        },
+        {
+         "image": {
+          "bg": "#5a0010",
+          "icon": "svg:icons/MediaMuteMic.svg",
+          "text": "Mikro aus",
+          "layout": "icon_text"
+         }
+        }
+       ]
+      },
+      {
+       "action": {
+        "type": "audio_output_next"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/MediaHeadphones.svg",
+        "text": "Ausgang",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "dynamic_folder",
+        "kind": "mixer"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/BarGraph.svg",
+        "text": "Mixer",
+        "layout": "icon_text"
+       }
+      },
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "Helligkeit",
+     "rotate": {
+      "type": "brightness"
+     },
+     "press": {
+      "type": "brightness_reset"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "App 1",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 0
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 0
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "App 2",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 1
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 1
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "App 3",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 2
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 2
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "App 4",
+     "rotate": {
+      "type": "stream_volume",
+      "index": 3
+     },
+     "press": {
+      "type": "stream_mute",
+      "index": 3
+     },
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "rotate": {
+     "type": "volume"
+    },
+    "display": "arc",
+    "label": "Lautstärke",
+    "tap": {
+     "type": "media",
+     "key": "play_pause"
+    }
+   },
+   "led_color": "#05d9e8"
+  }
+ ],
+ "home_workspace": "ws1"
+}

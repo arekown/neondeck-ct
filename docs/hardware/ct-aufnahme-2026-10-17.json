@@ -1,0 +1,795 @@
+[
+ {
+  "step": "round0",
+  "expected": "round",
+  "ok": true,
+  "events": [
+   "0500000700",
+   "0500000701"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn7"
+  ]
+ },
+ {
+  "step": "round1",
+  "expected": "round",
+  "ok": true,
+  "events": [
+   "0500000800",
+   "0500000801"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn8"
+  ]
+ },
+ {
+  "step": "round2",
+  "expected": "round",
+  "ok": true,
+  "events": [
+   "0500000900",
+   "0500000901"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn9"
+  ]
+ },
+ {
+  "step": "round3",
+  "expected": "round",
+  "ok": true,
+  "events": [
+   "0500000a00",
+   "0500000a01"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn10"
+  ]
+ },
+ {
+  "step": "round4",
+  "expected": "round",
+  "ok": true,
+  "events": [
+   "0500000b00",
+   "0500000b01"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn11"
+  ]
+ },
+ {
+  "step": "round5",
+  "expected": "round",
+  "ok": true,
+  "events": [
+   "0500000c00",
+   "0500000c01"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn12"
+  ]
+ },
+ {
+  "step": "round6",
+  "expected": "round",
+  "ok": true,
+  "events": [
+   "0500000d00",
+   "0500000d01"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn13"
+  ]
+ },
+ {
+  "step": "round7",
+  "expected": "round",
+  "ok": true,
+  "events": [
+   "0500000e01",
+   "0500000e00",
+   "0500000e01",
+   "0500000e00",
+   "0500000e01"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn14"
+  ]
+ },
+ {
+  "step": "squareL0",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500000f00",
+   "0500000f01"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn15"
+  ]
+ },
+ {
+  "step": "squareL1",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001200",
+   "0500001201"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn18"
+  ]
+ },
+ {
+  "step": "squareL2",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001001",
+   "0500001000",
+   "0500001001"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn16"
+  ]
+ },
+ {
+  "step": "squareL3",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001300",
+   "0500001301"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn19"
+  ]
+ },
+ {
+  "step": "squareL4",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001100",
+   "0500001101"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn17"
+  ]
+ },
+ {
+  "step": "squareL5",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001400",
+   "0500001401"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn20"
+  ]
+ },
+ {
+  "step": "squareR0",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001500",
+   "0500001501"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn21"
+  ]
+ },
+ {
+  "step": "squareR1",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001801",
+   "0500001800",
+   "0500001801"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn24"
+  ]
+ },
+ {
+  "step": "squareR2",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001600",
+   "0500001601"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn22"
+  ]
+ },
+ {
+  "step": "squareR3",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001900",
+   "0500001901"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn25"
+  ]
+ },
+ {
+  "step": "squareR4",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001700",
+   "0500001701"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn23"
+  ]
+ },
+ {
+  "step": "squareR5",
+  "expected": "square",
+  "ok": true,
+  "events": [
+   "0500001a01",
+   "0500001a00",
+   "0500001a01"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn26"
+  ]
+ },
+ {
+  "step": "knobL0_cw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "0501000101",
+   "0501000101",
+   "0501000101"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc1+"
+  ]
+ },
+ {
+  "step": "knobL0_ccw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "05010001ff",
+   "05010001ff",
+   "05010001ff"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc1-"
+  ]
+ },
+ {
+  "step": "knobL0_press",
+  "expected": "knobpress",
+  "ok": true,
+  "events": [
+   "0500000100",
+   "0500000101"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn1"
+  ]
+ },
+ {
+  "step": "knobL1_cw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "0501000201",
+   "0501000201",
+   "0501000201",
+   "0501000201"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc2+"
+  ]
+ },
+ {
+  "step": "knobL1_ccw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "05010002ff",
+   "05010002ff",
+   "05010002ff"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc2-"
+  ]
+ },
+ {
+  "step": "knobL1_press",
+  "expected": "knobpress",
+  "ok": true,
+  "events": [
+   "0500000200",
+   "0500000201"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn2"
+  ]
+ },
+ {
+  "step": "knobL2_cw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "0501000301",
+   "0501000301",
+   "0501000301"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc3+"
+  ]
+ },
+ {
+  "step": "knobL2_ccw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "05010003ff",
+   "05010003ff",
+   "05010003ff"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc3-"
+  ]
+ },
+ {
+  "step": "knobL2_press",
+  "expected": "knobpress",
+  "ok": true,
+  "events": [
+   "0500000300",
+   "0500000301"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn3"
+  ]
+ },
+ {
+  "step": "knobR0_cw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "0501000401",
+   "0501000401",
+   "0501000401"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc4+"
+  ]
+ },
+ {
+  "step": "knobR0_ccw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "05010004ff",
+   "05010004ff",
+   "05010004ff"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc4-"
+  ]
+ },
+ {
+  "step": "knobR0_press",
+  "expected": "knobpress",
+  "ok": true,
+  "events": [
+   "0500000400",
+   "0500000401"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn4"
+  ]
+ },
+ {
+  "step": "knobR1_cw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "0501000501",
+   "0501000501",
+   "0501000501"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc5+"
+  ]
+ },
+ {
+  "step": "knobR1_ccw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "05010005ff",
+   "05010005ff"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc5-"
+  ]
+ },
+ {
+  "step": "knobR1_press",
+  "expected": "knobpress",
+  "ok": true,
+  "events": [
+   "0500000500",
+   "0500000501"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn5"
+  ]
+ },
+ {
+  "step": "knobR2_cw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "0501000601",
+   "0501000601",
+   "0501000601"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc6+"
+  ]
+ },
+ {
+  "step": "knobR2_ccw",
+  "expected": "knobturn",
+  "ok": true,
+  "events": [
+   "05010006ff",
+   "05010006ff",
+   "05010006ff"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc6-"
+  ]
+ },
+ {
+  "step": "knobR2_press",
+  "expected": "knobpress",
+  "ok": true,
+  "events": [
+   "0500000600",
+   "0500000601"
+  ],
+  "wrong": [],
+  "keys": [
+   "btn6"
+  ]
+ },
+ {
+  "step": "wheel_cw",
+  "expected": "wheel",
+  "ok": true,
+  "events": [
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001",
+   "0501000001"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc0+"
+  ]
+ },
+ {
+  "step": "wheel_ccw",
+  "expected": "wheel",
+  "ok": true,
+  "events": [
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff",
+   "05010000ff"
+  ],
+  "wrong": [],
+  "keys": [
+   "enc0-"
+  ]
+ },
+ {
+  "step": "wheel_tap",
+  "expected": "wheeltouch",
+  "ok": true,
+  "events": [
+   "09520000007a006000",
+   "09720000007a006000"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "wheel_press",
+  "expected": "btn",
+  "ok": false,
+  "events": [
+   "09520000006c00d700",
+   "09720000006c00d700",
+   "09520000006d00d200",
+   "09720000006d00d200",
+   "095200000080001700",
+   "097200000080001700",
+   "0952000000cb006100",
+   "0972000000cb006100",
+   "09520000001d007100",
+   "09720000001d007100",
+   "09520000007f009100",
+   "09720000007f009100",
+   "09520000008300cb00",
+   "09720000008300cb00",
+   "0952000000a1002e00",
+   "0972000000a1002e00"
+  ],
+  "wrong": [
+   "09520000006c00d700",
+   "09520000006d00d200",
+   "095200000080001700",
+   "0952000000cb006100",
+   "09520000001d007100",
+   "09520000007f009100",
+   "09520000008300cb00",
+   "0952000000a1002e00"
+  ],
+  "keys": []
+ },
+ {
+  "step": "touch_c0r0",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "094d0000006700252f",
+   "096d0000006700252f"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c1r0",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "094d000000c800282c",
+   "096d000000c800282c"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c2r0",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "096d0000011900312a",
+   "094d00000111003a2e",
+   "096d00000111003a2e"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c3r0",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "096d0000016f00342f",
+   "094d00000163003939",
+   "096d00000163003939"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c0r1",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "094d0000007300852c",
+   "096d0000007300852c"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c1r1",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "096d000000d2008b2f",
+   "094d000000be00802f",
+   "096d000000be00802f"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c2r1",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "096d0000012000872c",
+   "094d00000111007f2b",
+   "096d00000111007f2b"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c3r1",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "094d0000017100812f",
+   "096d0000017100812f"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c0r2",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "096d0000007400d52c",
+   "094d0000006b00d723",
+   "096d0000006b00d723"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c1r2",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "096d000000c700d938",
+   "094d000000c400cf2f",
+   "094d000000c300d22f",
+   "094d000000c200d52f",
+   "094d000000c100d82f",
+   "094d000000c100db2f",
+   "096d000000c100db2f"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c2r2",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "096d0000011900de37",
+   "094d0000011700d728",
+   "096d0000011700d728"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_c3r2",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "096d0000016700e12e",
+   "094d0000017200e424",
+   "096d0000017200e424"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_stripL",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "094d00000027008326",
+   "096d00000027008326"
+  ],
+  "wrong": [],
+  "keys": []
+ },
+ {
+  "step": "touch_stripR",
+  "expected": "touch",
+  "ok": true,
+  "events": [
+   "094d000001c100862c",
+   "094d000001be00892c",
+   "094d000001b8008c2c",
+   "094d000001b4008d2c",
+   "094d000001b4008b2c",
+   "094d000001b6008b2c",
+   "096d000001b6008b2c"
+  ],
+  "wrong": [],
+  "keys": []
+ }
+]

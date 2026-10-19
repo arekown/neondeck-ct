@@ -1,0 +1,35 @@
+{
+  "backgroundColor": 4278190080,
+  "items": [
+    {
+      "$type": "Loupedeck.Service.ActionIconImageItem, LoupedeckShared",
+      "image": "PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyNDI1IiBzdHlsZT0ic3Ryb2tlOiMyMjI0MjU7ZmlsbDpub25lIi8+PC9zdmc+",
+      "imageFileName": null,
+      "imageColor": 4294967295,
+      "imageRotation": "None",
+      "isVisible": true,
+      "itemType": "Image",
+      "area": {
+        "x": 17,
+        "y": 0,
+        "width": 65,
+        "height": 65
+      }
+    },
+    {
+      "$type": "Loupedeck.Service.ActionIconTextItem, LoupedeckShared",
+      "text": "Find",
+      "textColor": 4294967295,
+      "fontSize": 4,
+      "fontName": "Sans",
+      "isVisible": true,
+      "itemType": "Text",
+      "area": {
+        "x": 0,
+        "y": 57,
+        "width": 100,
+        "height": 32
+      }
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+ "version": 2,
+ "id": "system",
+ "name": "System & Werkzeuge (KDE Plasma)",
+ "description": "Taschenrechner, Systemmonitor, Systemeinstellungen, Zwischenablage, Emoji, Suche, Bildschirmfoto, Stoppuhr, Uhr und Datum, Sperren und Abmelden; Regler für Lautstärke und Helligkeit.",
+ "app_ids": [],
+ "dynamic": true,
+ "hold_profile": false,
+ "round": {},
+ "square": {},
+ "workspaces": [
+  {
+   "id": "ws1",
+   "name": "System & Werkzeuge",
+   "touch_pages": [
+    {
+     "id": "p1",
+     "name": "System",
+     "buttons": [
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.kde.kcalc"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Calculator.svg",
+        "text": "Rechner",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "org.kde.plasma-systemmonitor"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/BarGraph.svg",
+        "text": "Monitor",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "app_focus",
+        "app_id": "systemsettings"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Settings.svg",
+        "text": "Einstell.",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "hotkey",
+        "keys": "KEY_LEFTMETA+KEY_V"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Clipboard.svg",
+        "text": "Ablage",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "emoji"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/EmojiLaugh.svg",
+        "text": "Emoji",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "search"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/SearchComputer.svg",
+        "text": "Suche",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "screenshot"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Screenshot.svg",
+        "text": "Foto",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "stopwatch"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Stopwatch.svg",
+        "text": "Stoppuhr",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "clock"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Clock.svg",
+        "text": "Uhr",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "date",
+        "format": "date"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/CalendarDate.svg",
+        "text": "Datum",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde",
+        "name": "lock"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/LockWorkstation.svg",
+        "text": "Sperren",
+        "layout": "icon_text"
+       }
+      },
+      {
+       "action": {
+        "type": "kde_shortcut",
+        "component": "ksmserver",
+        "name": "Log Out"
+       },
+       "image": {
+        "bg": "#000000",
+        "icon": "svg:icons/Shutdown.svg",
+        "text": "Abmelden",
+        "layout": "icon_text"
+       }
+      }
+     ]
+    }
+   ],
+   "encoders": [
+    {
+     "label": "Lautstärke",
+     "rotate": {
+      "type": "volume"
+     },
+     "press": {
+      "type": "mute_toggle"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "Helligkeit",
+     "rotate": {
+      "type": "brightness"
+     },
+     "press": {
+      "type": "brightness_reset"
+     },
+     "left": null,
+     "right": null,
+     "strip": "bar"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    },
+    {
+     "label": "",
+     "rotate": null,
+     "press": null,
+     "left": null,
+     "right": null,
+     "strip": "name_value"
+    }
+   ],
+   "wheel": {
+    "display": "arc",
+    "label": "Lautstärke",
+    "rotate": {
+     "type": "volume"
+    },
+    "tap": {
+     "type": "mute_toggle"
+    }
+   },
+   "led_color": "#ff00ff"
+  }
+ ],
+ "home_workspace": "ws1"
+}
