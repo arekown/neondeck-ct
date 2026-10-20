@@ -13,6 +13,21 @@ updates from the network. Only the "HTTP request" action uses the network.
 
 Further documents (German): [Actions](docs/aktionen.md), [Command line and JSON API](docs/cli.md).
 
+## Preview
+
+| Cockpit look (awake) | Screensaver "Cockpit" |
+|---|---|
+| ![Cockpit look on the CT](docs/media/cockpit-wach.gif) | ![Cockpit screensaver](docs/media/bildschirmschoner.gif) |
+| [Video (MP4)](docs/media/cockpit-wach.mp4) | [Video (MP4)](docs/media/bildschirmschoner.mp4) |
+
+The videos show exactly the images the service sends to the device, at the device's frame rate
+(made with `tools/record_video.py`).
+
+| Editor | Insert template |
+|---|---|
+| ![Editor](docs/media/editor.jpg) | ![Insert template](docs/media/vorlage-einfuegen.jpg) |
+| ![Editing a square button](docs/media/editor-taste.jpg) | ![Editing a touch tile](docs/media/editor-kachel.jpg) |
+
 ## Requirements
 
 - Loupedeck CT (USB IDs 2ec2:0003 or 2ec2:0007), KDE Plasma 6 on Wayland.
@@ -180,6 +195,7 @@ For games or programs that need keyboard input, the service sends through `/dev/
 .venv/bin/pip install -e .[dev]   # pytest and ruff into the venv
 .venv/bin/python -m pytest -q     # test suite
 .venv/bin/ruff check src tests tools
+/usr/bin/python3 tools/record_video.py --out <dir> --gif docs/media   # preview videos
 ```
 
 ## License

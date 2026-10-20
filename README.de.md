@@ -13,6 +13,21 @@ keine Telemetrie, keine Updates aus dem Netz. Netzwerk nutzt nur die Aktion „H
 
 Weitere Dokumente: [Aktionen](docs/aktionen.md), [Befehlszeile und JSON-API](docs/cli.md).
 
+## Vorschau
+
+| Cockpit-Look (wach) | Bildschirmschoner „Cockpit“ |
+|---|---|
+| ![Cockpit-Look am CT](docs/media/cockpit-wach.gif) | ![Bildschirmschoner Cockpit](docs/media/bildschirmschoner.gif) |
+| [Video (MP4)](docs/media/cockpit-wach.mp4) | [Video (MP4)](docs/media/bildschirmschoner.mp4) |
+
+Die Videos zeigen genau die Bilder, die der Dienst an das Gerät sendet, im Takt des Geräts
+(erzeugt mit `tools/record_video.py`).
+
+| Editor | Vorlage einfügen |
+|---|---|
+| ![Editor](docs/media/editor.jpg) | ![Vorlage einfügen](docs/media/vorlage-einfuegen.jpg) |
+| ![Eckige Taste bearbeiten](docs/media/editor-taste.jpg) | ![Touch-Kachel bearbeiten](docs/media/editor-kachel.jpg) |
+
 ## Voraussetzungen
 
 - Loupedeck CT (USB-IDs 2ec2:0003 oder 2ec2:0007), KDE Plasma 6 unter Wayland.
@@ -179,6 +194,7 @@ Bei Spielen oder Programmen, die Tastatureingaben brauchen, sendet der Dienst ü
 .venv/bin/pip install -e .[dev]   # pytest und ruff in die venv
 .venv/bin/python -m pytest -q     # Testsuite
 .venv/bin/ruff check src tests tools
+/usr/bin/python3 tools/record_video.py --out <Ordner> --gif docs/media   # Vorschau-Videos
 ```
 
 ## Lizenz
